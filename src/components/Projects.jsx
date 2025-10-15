@@ -5,51 +5,51 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "QQuote - Software Engineering Assistant",
+      title: "WAT.ai - Machine Learning Engineer",
       year: "2025",
-      description: "Software Engineering Intern working on internal APIs, product management, and process improvement",
-      image: "https://picsum.photos/600/400?random=1",
-      tech: "Postman, Product Management, QA Testing"
+      description: "Machine Learning Engineer working on AI assistant for independent and safe living",
+      image: "/images/watairough.png",
+      tech: "Machine Learning, AI, Python"
     },
     {
       id: 2,
-      title: "Encore - AI Software Engineer",
-      year: "2025", 
-      description: "AI Software Engineer focused on AI & fintech innovation and development",
-      image: "https://picsum.photos/600/400?random=2",
-      tech: "React.js, AI, Fintech"
+      title: "QQuote - Software Engineering Intern",
+      year: "2025",
+      description: "Software Engineering Intern working on internal APIs, product management, and process improvement",
+      image: "/images/qqrough.png",
+      tech: "Postman, Product Management, QA Testing"
     },
     {
       id: 3,
-      title: "Project Gamma",
-      year: "2024",
-      description: "AI-powered productivity dashboard with real-time analytics",
-      image: "https://picsum.photos/600/400?random=3",
-      tech: "Next.js, TensorFlow, MongoDB"
+      title: "Encore - AI Software Engineer",
+      year: "2025", 
+      description: "AI Software Engineer focused on AI & fintech innovation and development",
+      image: "/images/encorerough.png",
+      tech: "React.js, AI, Fintech"
     },
     {
       id: 4,
-      title: "Project Delta",
+      title: "Aeon - Full Stack Developer",
       year: "2024",
-      description: "Mobile app for sustainable living and carbon footprint tracking",
-      image: "https://picsum.photos/600/400?random=4",
-      tech: "React Native, Firebase, Python"
+      description: "Full Stack Developer building and testing paywall designs with Stripe integration",
+      image: "/images/aeonrough.png",
+      tech: "React.js, Stripe, Full Stack"
     },
     {
       id: 5,
-      title: "Project Epsilon",
-      year: "2025",
-      description: "Blockchain-based supply chain transparency platform",
-      image: "https://picsum.photos/600/400?random=5",
-      tech: "Solidity, Web3.js, Express.js"
+      title: "Gradepad",
+      year: "2024",
+      description: "Personal project - A comprehensive grade tracking and academic management platform",
+      image: "/images/gradepadrough.webp",
+      tech: "React, Node.js, Database"
     },
     {
       id: 6,
-      title: "Project Zeta",
+      title: "QQuote - Special Projects Engineering Assistant",
       year: "2024",
-      description: "Real-time collaborative code editor with AI assistance",
-      image: "https://picsum.photos/600/400?random=6",
-      tech: "WebSockets, OpenAI API, React"
+      description: "Special Projects Engineering Assistant developing analytical dashboards and supporting product management",
+      image: "/images/qqrough.png",
+      tech: "Figma, Product Management, Analytics"
     }
   ]
 
