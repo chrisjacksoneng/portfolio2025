@@ -79,21 +79,13 @@ body {
   margin: 0;
   font-weight: 400;
   line-height: 1.4;
-  max-width: 400px;
+  max-width: 520px;
 }
 
 .social-links {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-}
-
-.resume-text {
-  font-size: 0.9rem;
-  color: #aaaaaa;
-  margin: 0.5rem 0 0 0;
-  font-weight: 400;
-  line-height: 1.4;
 }
 
 .resume-link {

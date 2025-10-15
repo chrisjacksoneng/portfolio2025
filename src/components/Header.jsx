@@ -6,7 +6,7 @@ const Header = () => {
       <div className="navbar-content">
         <div className="navbar-left">
           <h1 className="name">Chris Jackson</h1>
-          <p className="description">description</p>
+          <p className="description">Systems Design Engineering student at the University of Waterloo with a passion for building innovative solutions that make a positive impact. Currently working as a Software Engineering Intern at QQuote, gaining experience in product management, UI/UX design, and full-stack development.</p>
         </div>
         <div className="navbar-right">
           <div className="social-links">
