@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Encore - AI Software Engineer",
       year: "2025", 
       description: "AI Software Engineer focused on AI & fintech innovation and development",
-      image: "/images/encorerough.png",
+      image: "/images/EncoreBg (3).png",
       tech: "React.js, AI, Fintech"
     },
     {

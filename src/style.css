@@ -18,16 +18,13 @@ body {
 
 .app {
   min-height: 100vh;
-  padding: 6rem 2rem 2rem 2rem; /* Extra top padding for fixed navbar */
+  padding: 2rem; /* Normal padding since navbar is not fixed */
   width: 100%;
 }
 
 /* Navigation Bar Styles */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: static; /* Let navbar scroll away */
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -36,7 +33,7 @@ body {
 
 .navbar-content {
   width: 100%;
-  padding: 0 2rem;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +58,7 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   font-style: italic;
-  font-family: "Playfair Display", "Times New Roman", serif;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
   margin: 0 0 0.5rem 0;
   background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
   -webkit-background-clip: text;
@@ -75,7 +72,7 @@ body {
 
 .description {
   font-size: 0.9rem;
-  color: #aaaaaa;
+  color: #ffffff;
   margin: 0;
   font-weight: 400;
   line-height: 1.4;
@@ -89,7 +86,7 @@ body {
 
 .availability {
   margin-top: 0.4rem;
-  color: #aaaaaa;
+  color: #ffffff;
   font-weight: 600;
   font-style: italic;
   font-size: 0.95rem;
@@ -129,11 +126,11 @@ body {
 }
 
 .resume-link:hover {
-  color: #888888;
+  color: #ffffff;
 }
 
 .social-link {
-  color: #888888;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -211,7 +208,7 @@ body {
 }
 
 .project-card:nth-child(3) .project-image:hover {
-  box-shadow: 0 0 30px rgba(168, 85, 247, 0.6); /* Purple for Encore */
+  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6); /* F96210 for Encore */
 }
 
 .project-card:nth-child(4) .project-image:hover {
@@ -255,7 +252,7 @@ body {
 
 .project-description {
   font-size: 1rem;
-  color: #aaaaaa;
+  color: #ffffff;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
@@ -268,7 +265,7 @@ body {
 
 .project-tech span {
   background: #1a1a1a;
-  color: #888888;
+  color: #ffffff;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -282,12 +279,12 @@ body {
   }
 
   .navbar-content {
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .name {
     font-size: 1.3rem;
-    font-family: "Playfair Display", "Times New Roman", serif;
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-weight: 400;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
     -webkit-background-clip: text;
@@ -319,7 +316,7 @@ body {
 
   .name {
     font-size: 1.1rem;
-    font-family: "Playfair Display", "Times New Roman", serif;
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-weight: 400;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
     -webkit-background-clip: text;
