@@ -1,11 +1,11 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 
-const Projects = () => {
+const Projects = ({ onProjectClick }) => {
   const projects = [
     {
       id: 1,
-      title: "WAT.ai - Machine Learning Engineer",
+      title: "WAT.ai",
       year: "2025",
       description: "Machine Learning Engineer working on AI assistant for independent and safe living",
       image: "/images/WATaiBg (1).png",
@@ -13,7 +13,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "QQuote - Software Engineering Intern",
+      title: "QQuote",
       year: "2025",
       description: "Software Engineering Intern working on internal APIs, product management, and process improvement",
       image: "/images/QQuoteBg.png",
@@ -21,7 +21,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Encore - AI Software Engineer",
+      title: "Encore",
       year: "2025", 
       description: "AI Software Engineer focused on AI & fintech innovation and development",
       image: "/images/EncoreBg (3).png",
@@ -29,8 +29,8 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Aeon - Full Stack Developer",
-      year: "2024",
+      title: "Aeon",
+      year: "2025",
       description: "Full Stack Developer building and testing paywall designs with Stripe integration",
       image: "/images/AeonBg.png",
       tech: "React.js, Stripe, Full Stack"
@@ -38,15 +38,15 @@ const Projects = () => {
     {
       id: 5,
       title: "Gradepad",
-      year: "2024",
+      year: "2025",
       description: "Personal project - A comprehensive grade tracking and academic management platform",
       image: "/images/gradepadrough.webp",
       tech: "React, Node.js, Database"
     },
     {
       id: 6,
-      title: "QQuote - Special Projects Engineering Assistant",
-      year: "2024",
+      title: "QQuote",
+      year: "2025",
       description: "Special Projects Engineering Assistant developing analytical dashboards and supporting product management",
       image: "/images/QQuoteBg.png",
       tech: "Figma, Product Management, Analytics"
@@ -57,7 +57,7 @@ const Projects = () => {
     <section className="projects">
       <div className="projects-grid">
         {projects.map(project => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.id} project={project} onProjectClick={onProjectClick} />
         ))}
       </div>
     </section>
