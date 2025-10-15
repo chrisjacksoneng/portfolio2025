@@ -8,7 +8,7 @@ const Projects = () => {
       title: "WAT.ai - Machine Learning Engineer",
       year: "2025",
       description: "Machine Learning Engineer working on AI assistant for independent and safe living",
-      image: "/images/watairough.png",
+      image: "/images/WATaiBg (1).png",
       tech: "Machine Learning, AI, Python"
     },
     {
