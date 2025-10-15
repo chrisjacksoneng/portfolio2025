@@ -18,7 +18,7 @@ body {
 
 .app {
   min-height: 100vh;
-  padding: 1rem 2rem 2rem 2rem; /* Reduced top padding to move content up */
+  padding: 1rem 2rem 1rem 2rem; /* Reduced bottom padding to move footer up */
   width: 100%;
 }
 
@@ -386,6 +386,62 @@ body {
   .project-info {
     padding: 1rem;
   }
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  border-top: 1px solid #333333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer-link:hover {
+  color: #888888;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
 /* Smooth scrolling */
