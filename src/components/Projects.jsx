@@ -5,19 +5,19 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Project Alpha",
+      title: "QQuote - Software Engineering Assistant",
       year: "2025",
-      description: "Open-source background coding agent and interface (1300+ stars)",
+      description: "Software Engineering Intern working on internal APIs, product management, and process improvement",
       image: "https://picsum.photos/600/400?random=1",
-      tech: "React, TypeScript, Node.js"
+      tech: "Postman, Product Management, QA Testing"
     },
     {
       id: 2,
-      title: "Project Beta",
+      title: "Encore - AI Software Engineer",
       year: "2025", 
-      description: "Building a full-stack vibe coding platform",
+      description: "AI Software Engineer focused on AI & fintech innovation and development",
       image: "https://picsum.photos/600/400?random=2",
-      tech: "Vue.js, Python, PostgreSQL"
+      tech: "React.js, AI, Fintech"
     },
     {
       id: 3,

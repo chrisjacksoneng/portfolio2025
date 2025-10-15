@@ -13,9 +13,6 @@ const ProjectCard = ({ project }) => {
         <p className="project-description">
           {project.description}
         </p>
-        <div className="project-tech">
-          <span>{project.tech}</span>
-        </div>
       </div>
     </div>
   )
