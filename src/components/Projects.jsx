@@ -32,7 +32,7 @@ const Projects = () => {
       title: "Aeon - Full Stack Developer",
       year: "2024",
       description: "Full Stack Developer building and testing paywall designs with Stripe integration",
-      image: "/images/aeonrough.png",
+      image: "/images/AeonBg.png",
       tech: "React.js, Stripe, Full Stack"
     },
     {
