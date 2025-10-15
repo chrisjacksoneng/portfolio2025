@@ -3,26 +3,32 @@ import React from 'react'
 const ProjectDetail = ({ project, onBack }) => {
   const getGlowColor = (projectId) => {
     const glowColors = {
-      1: 'rgba(255, 206, 26, 0.6)', // FFCE1A for WAT.ai
-      2: 'rgba(218, 108, 53, 0.6)', // DA6C35 for QQuote
-      3: 'rgba(249, 98, 16, 0.6)',  // F96210 for Encore
-      4: 'rgba(66, 37, 116, 0.9)',  // 422574 for Aeon (stronger)
-      5: 'rgba(245, 158, 11, 0.6)', // Orange for Gradepad
-      6: 'rgba(218, 108, 53, 0.6)'  // DA6C35 for QQuote Special
+      1: 'rgba(255, 206, 26, 0.3)', // FFCE1A for WAT.ai - reduced opacity
+      2: 'rgba(218, 108, 53, 0.3)', // DA6C35 for QQuote - reduced opacity
+      3: 'rgba(249, 98, 16, 0.3)',  // F96210 for Encore - reduced opacity
+      4: 'rgba(66, 37, 116, 0.4)',  // 422574 for Aeon - reduced opacity
+      5: 'rgba(245, 158, 11, 0.3)', // Orange for Gradepad - reduced opacity
+      6: 'rgba(218, 108, 53, 0.3)'  // DA6C35 for QQuote Special - reduced opacity
     }
-    return glowColors[projectId] || 'rgba(255, 255, 255, 0.2)'
+    return glowColors[projectId] || 'rgba(255, 255, 255, 0.1)'
   }
 
   const getAeonGlow = () => {
     return `
-      0 0 80px 15px rgba(66, 37, 116, 0.9),
-      0 0 40px 5px rgba(66, 37, 116, 0.7),
-      0 0 20px rgba(66, 37, 116, 0.5),
-      inset 0 0 30px rgba(66, 37, 116, 0.3)
+      0 0 50px 8px rgba(66, 37, 116, 0.4),
+      0 0 25px 3px rgba(66, 37, 116, 0.3),
+      0 0 12px rgba(66, 37, 116, 0.2),
+      inset 0 0 15px rgba(66, 37, 116, 0.15)
     `
   }
 
   const isAeon = project.id === 4
+
+  const getImageTransform = (projectId) => {
+    if (projectId === 1) return 'translateY(40px) scale(1.3)' // WAT.ai
+    if (projectId === 4) return 'translateX(-10px) scale(1.4)' // Aeon
+    return 'scale(1.15)' // Default - back to original
+  }
 
   return (
     <div className="project-detail">
@@ -34,6 +40,7 @@ const ProjectDetail = ({ project, onBack }) => {
       
       <div className="project-detail-content">
         <h1 className="project-detail-title">{project.title}</h1>
+        <h2 className="project-detail-job-title">{project.jobTitle}</h2>
         
         <div className="project-detail-image-container">
           <img 
@@ -41,7 +48,8 @@ const ProjectDetail = ({ project, onBack }) => {
             alt={project.title}
             className="project-detail-image"
             style={{
-              boxShadow: isAeon ? getAeonGlow() : `0 0 60px 10px ${getGlowColor(project.id)}`
+              boxShadow: isAeon ? getAeonGlow() : `0 0 40px 6px ${getGlowColor(project.id)}`,
+              transform: getImageTransform(project.id)
             }}
           />
         </div>
