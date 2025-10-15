@@ -18,7 +18,7 @@ body {
 
 .app {
   min-height: 100vh;
-  padding: 2rem; /* Normal padding since navbar is not fixed */
+  padding: 1rem 2rem 2rem 2rem; /* Reduced top padding to move content up */
   width: 100%;
 }
 
@@ -55,8 +55,8 @@ body {
 }
 
 .name {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 1000;
   font-style: italic;
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   margin: 0 0 0.5rem 0;
@@ -204,7 +204,7 @@ body {
 }
 
 .project-card:nth-child(2) .project-image:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); /* Blue for QQuote */
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote */
 }
 
 .project-card:nth-child(3) .project-image:hover {
@@ -212,7 +212,9 @@ body {
 }
 
 .project-card:nth-child(4) .project-image:hover {
-  box-shadow: 0 0 60px 10px rgba(66, 37, 116, 0.85); /* stronger 422574 glow */
+  box-shadow: 0 0 80px 15px rgba(66, 37, 116, 0.9),
+    0 0 40px 5px rgba(66, 37, 116, 0.7), 0 0 20px rgba(66, 37, 116, 0.5),
+    inset 0 0 30px rgba(66, 37, 116, 0.3); /* Multi-layered dramatic 422574 glow */
 }
 
 .project-card:nth-child(5) .project-image:hover {
@@ -220,7 +222,7 @@ body {
 }
 
 .project-card:nth-child(6) .project-image:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); /* Blue for QQuote Special */
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote Special */
 }
 
 .project-card:hover .project-title {
@@ -295,9 +297,9 @@ body {
   }
 
   .name {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: "Cormorant Garamond", "Times New Roman", serif;
-    font-weight: 400;
+    font-weight: 600;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -327,9 +329,9 @@ body {
   }
 
   .name {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: "Cormorant Garamond", "Times New Roman", serif;
-    font-weight: 400;
+    font-weight: 600;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

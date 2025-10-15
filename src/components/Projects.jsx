@@ -16,7 +16,7 @@ const Projects = () => {
       title: "QQuote - Software Engineering Intern",
       year: "2025",
       description: "Software Engineering Intern working on internal APIs, product management, and process improvement",
-      image: "/images/qqrough.png",
+      image: "/images/QQuoteBg.png",
       tech: "Postman, Product Management, QA Testing"
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
       title: "QQuote - Special Projects Engineering Assistant",
       year: "2024",
       description: "Special Projects Engineering Assistant developing analytical dashboards and supporting product management",
-      image: "/images/qqrough.png",
+      image: "/images/QQuoteBg.png",
       tech: "Figma, Product Management, Analytics"
     }
   ]
