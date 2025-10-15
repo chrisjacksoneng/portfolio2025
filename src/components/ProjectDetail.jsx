@@ -36,6 +36,9 @@ const ProjectDetail = ({ project, onBack }) => {
         <button className="back-button" onClick={onBack}>
           ← Back
         </button>
+        <button className="links-button">
+          Links
+        </button>
       </div>
       
       <div className="project-detail-content">

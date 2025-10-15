@@ -404,20 +404,38 @@ body {
 
 .project-detail-header {
   margin-bottom: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back-button {
   background: none;
   border: none;
-  color: #ffffff;
+  color: #cccccc;
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
   transition: color 0.3s ease;
+  margin-right: 45%;
 }
 
 .back-button:hover {
+  color: #888888;
+}
+
+.links-button {
+  background: none;
+  border: none;
+  color: #cccccc;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 45%;
+}
+
+.links-button:hover {
   color: #888888;
 }
 
