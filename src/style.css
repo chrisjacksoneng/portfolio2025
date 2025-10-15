@@ -82,15 +82,16 @@ body {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .availability {
-  margin-top: 0.4rem;
+  margin-top: 1rem;
   color: #ffffff;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 0.95rem;
+  font-weight: 400;
+  font-size: 0.9rem;
   text-align: right;
+  line-height: 1.4;
 }
 
 .resume-section {
@@ -191,7 +192,7 @@ body {
   position: relative;
   background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.1s ease;
 }
 
 .project-image:hover {
@@ -228,6 +229,37 @@ body {
 .project-card:hover .project-title {
   text-decoration: underline;
   transition: text-decoration 0.3s ease;
+}
+
+/* Hover on title triggers image glow */
+.project-title:hover {
+  cursor: pointer;
+}
+
+.project-card:nth-child(1):has(.project-title:hover) .project-image {
+  box-shadow: 0 0 30px rgba(255, 206, 26, 0.6); /* FFCE1A for WAT.ai */
+}
+
+.project-card:nth-child(2):has(.project-title:hover) .project-image {
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote */
+}
+
+.project-card:nth-child(3):has(.project-title:hover) .project-image {
+  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6); /* F96210 for Encore */
+}
+
+.project-card:nth-child(4):has(.project-title:hover) .project-image {
+  box-shadow: 0 0 80px 15px rgba(66, 37, 116, 0.9),
+    0 0 40px 5px rgba(66, 37, 116, 0.7), 0 0 20px rgba(66, 37, 116, 0.5),
+    inset 0 0 30px rgba(66, 37, 116, 0.3); /* Multi-layered dramatic 422574 glow for Aeon */
+}
+
+.project-card:nth-child(5):has(.project-title:hover) .project-image {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.6); /* Orange for Gradepad */
+}
+
+.project-card:nth-child(6):has(.project-title:hover) .project-image {
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote Special */
 }
 
 .project-image img {
