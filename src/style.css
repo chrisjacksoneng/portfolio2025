@@ -789,6 +789,8 @@ body {
 
   .wat-image {
     transform: scale(1.2) !important;
+    filter: drop-shadow(0 0 15px rgba(255, 206, 26, 0.3))
+      drop-shadow(0 0 25px rgba(255, 206, 26, 0.2)) !important;
   }
 }
 
