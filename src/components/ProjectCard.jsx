@@ -10,7 +10,7 @@ const ProjectCard = ({ project, onProjectClick }) => {
       <div className="project-image" onClick={handleImageClick}>
         <img src={project.image} alt={project.title} />
       </div>
-      {/* Meta panel intentionally only on detail page */}
+      {/* Meta panel only on detail page */}
       <div className="project-info">
         <h3 className="project-title">
           {project.title} <span className="year-separator">— {project.year}</span>
