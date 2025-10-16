@@ -67,6 +67,7 @@ const Projects = ({ onProjectClick }) => {
 
   return (
     <section className="projects">
+      <h2 className="projects-heading">Tools & Skills</h2>
       <div className="projects-grid">
         {projects.map(project => (
           <ProjectCard key={project.id} project={project} onProjectClick={onProjectClick} />

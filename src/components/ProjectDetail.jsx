@@ -70,9 +70,14 @@ const ProjectDetail = ({ project, onBack }) => {
             </div>
           </div>
           <div className="detail-meta-right">
-            <h4>Overview</h4>
-            <p>{project.overview || project.description}</p>
+            <h4>Synopsis</h4>
+            <p>{project.synopsis || project.description}</p>
           </div>
+        </div>
+        
+        <div className="about-this-role-section">
+          <h4>About This Role</h4>
+          <p>This position involved working with cutting-edge technologies and collaborating with cross-functional teams to deliver innovative solutions. Key focus areas included developing scalable applications, implementing best practices, and contributing to the overall product strategy and technical architecture.</p>
         </div>
       </div>
     </div>

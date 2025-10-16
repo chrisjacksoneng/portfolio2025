@@ -691,6 +691,31 @@ body {
   margin: 0;
 }
 
+.about-this-role-section {
+  margin-top: 2rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+}
+
+.about-this-role-section h4 {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  text-align: left;
+}
+
+.about-this-role-section p {
+  font-size: 1rem;
+  color: #eaeaea;
+  text-align: left;
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* Project-specific glow effects for detail pages */
 .project-detail-image-container.project-glow-1 {
   box-shadow: 0 0 30px rgba(255, 206, 26, 0.6); /* FFCE1A for WAT.ai */
@@ -705,9 +730,9 @@ body {
 }
 
 .project-detail-image-container.project-glow-4 {
-  box-shadow: 0 0 80px 15px rgba(66, 37, 116, 0.9),
-    0 0 40px 5px rgba(66, 37, 116, 0.7), 0 0 20px rgba(66, 37, 116, 0.5),
-    inset 0 0 30px rgba(66, 37, 116, 0.3); /* Multi-layered dramatic 422574 glow for Aeon */
+  box-shadow: 0 0 60px 12px rgba(66, 37, 116, 0.6),
+    0 0 30px 4px rgba(66, 37, 116, 0.4), 0 0 15px rgba(66, 37, 116, 0.3),
+    inset 0 0 20px rgba(66, 37, 116, 0.2); /* Reduced intensity glow for Aeon */
 }
 
 .project-detail-image-container.project-glow-5 {
