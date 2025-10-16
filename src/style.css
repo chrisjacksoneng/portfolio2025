@@ -641,7 +641,7 @@ body {
   max-width: 1200px; /* enlarge Aeon detail presentation */
   width: min(60vw, 1200px);
   transform: translateY(
-    -120px
+    -60px
   ); /* move image up without affecting layout above */
 }
 
