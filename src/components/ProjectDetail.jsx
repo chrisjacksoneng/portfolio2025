@@ -150,6 +150,45 @@ const ProjectDetail = ({ project, onBack }) => {
           </div>
         )}
 
+        {project.id === 5 && (
+          <div className="about-this-role-section">
+            <h4>About This Project</h4>
+            <p>Gradepad was my first big coding project, and it came from a real problem I was facing as a student. I was tired of juggling multiple tabs of grade calculators that didn't save my data, forcing me to re-enter everything each time. So I decided to build something better—a comprehensive grade tracking platform that actually solved the problems I was dealing with.</p>
+
+            <div className="role-subsection">
+              <h5>The Problem</h5>
+              <p>Most existing grade calculators either looked outdated or didn't store user data, meaning you had to start from scratch every time you opened them. They also couldn't handle multiple courses at once, and none of them showed an overall semester average. I was constantly switching between tabs and doing manual calculations, which was frustrating and error-prone.</p>
+              <p>I wanted to build something that looked good, saved my work, and gave me a complete picture of how I was doing across all my classes.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>What I Built</h5>
+              <p>I built a full-stack web application with user authentication, so students could create accounts and save their data. The core feature was the grade calculator, which let you add assignments with titles, due dates, grades, and weights. The system automatically calculated your current grade, highest possible grade, and lowest possible grade for each course.</p>
+              <p>I also built a dashboard that showed all your courses at a glance, so you could see your semester-wide performance without switching between different pages. This was one of the most useful features—being able to see everything in one place.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Technical Challenges</h5>
+              <p>This was my first time building something with a full tech stack—HTML, CSS, JavaScript for the frontend, PHP for the server-side logic, and MySQL for the database. Learning how to connect all these pieces together was a huge learning curve.</p>
+              <p>One of the trickier parts was getting the grade calculations right. I had to handle different grading schemes—some courses use points, others use percentages, and some use letter grades. Making sure the calculations were accurate and handling edge cases (like missing assignments or extra credit) took a lot of testing.</p>
+              <p>User authentication was also new territory for me. Learning about password hashing, session management, and secure login flows was really valuable, even if it was challenging at first.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Design & UX</h5>
+              <p>I wanted the interface to look clean and modern, which meant spending a lot of time on CSS and making sure everything was responsive. I used a monospaced font for the grade tables so all the numbers lined up nicely, which made it easier to scan your data.</p>
+              <p>I also thought about features that would make the app more useful, like color-coding assignments based on due dates (overdue in red, due soon in yellow, etc.) and a potential grade calculator where you could see "if I get X on my final, what will my grade be?"</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>What I Learned</h5>
+              <p>This project taught me a ton about the full development cycle—from planning and requirements gathering to building, testing, and iterating. I wrote a comprehensive design document before I started coding, which helped me think through the requirements and avoid scope creep.</p>
+              <p>It was also my first real experience with version control, database design, and thinking about security. Building something from scratch gave me a much better understanding of how all the pieces of a web application fit together.</p>
+              <p>Most importantly, it showed me that I could identify a problem, design a solution, and actually build it. That confidence was huge for me as a developer.</p>
+            </div>
+          </div>
+        )}
+
         {project.id === 3 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>

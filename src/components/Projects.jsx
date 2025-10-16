@@ -47,11 +47,11 @@ const Projects = ({ onProjectClick }) => {
       id: 5,
       title: "Gradepad",
       year: "2025",
-      timeline: "Personal Project",
+      timeline: "Jan. 2025 - Apr. 2025",
       jobTitle: "Personal Project",
-      description: "Personal project - A comprehensive grade tracking and academic management platform",
-      image: "./images/gradepadrough.webp",
-      tech: "React, Node.js, Database"
+      description: "A comprehensive grade tracking and academic management platform",
+      image: "./images/gradepadtempbg.jpg",
+      tech: "HTML, CSS, JavaScript, PHP, MySQL"
     },
     {
       id: 6,
