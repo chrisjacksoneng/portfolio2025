@@ -23,7 +23,7 @@ const Projects = ({ onProjectClick }) => {
     },
     {
       id: 3,
-      title: "Encore",
+      title: "Encore Financial Ltd",
       year: "2025",
       jobTitle: "AI Software Engineer",
       description: "AI Software Engineer focused on AI & fintech innovation and development",
@@ -32,7 +32,7 @@ const Projects = ({ onProjectClick }) => {
     },
     {
       id: 4,
-      title: "Aeon",
+      title: "Aeon Stellar Commerce",
       year: "2025",
       jobTitle: "Full Stack Developer",
       description: "Full Stack Developer building and testing paywall designs with Stripe integration",

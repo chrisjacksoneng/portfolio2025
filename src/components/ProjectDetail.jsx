@@ -41,7 +41,7 @@ const ProjectDetail = ({ project, onBack }) => {
   const getImageTransform = (projectId) => {
     if (projectId === 1) return 'translateY(40px) scale(1.3)' // WAT.ai
     if (projectId === 4) return 'translateX(-10px) scale(1.4)' // Aeon
-    return 'scale(1.15)' // Default - back to original
+    return 'scale(1.15)' // Default - matches home page scaling
   }
 
   return (
