@@ -131,8 +131,21 @@ const ProjectDetail = ({ project, onBack }) => {
             </div>
 
             <div className="role-subsection">
+              <h5>Product Management</h5>
+              <p>Working on the product side was eye-opening. I learned how to think about features from the user's perspective—not just what's technically possible, but what actually solves a problem for them. Writing feature specs taught me to think through edge cases and user flows before any code gets written.</p>
+              <p>I also got to work on prioritization and planning. Seeing how the team decided what to build next, balancing user requests with technical debt and business goals, was really valuable. It's one thing to know how to code, but understanding why you're building something is just as important.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Design & UX</h5>
+              <p>Creating wireframes and mockups was one of my favorite parts. I used Figma to design interfaces and think through user flows. There's something satisfying about seeing an idea go from a rough sketch to a polished mockup.</p>
+              <p>I learned to pay attention to details that I hadn't really thought about before—spacing, typography, color choices, how different states look (loading, error, success). These small details make a huge difference in how users experience the product.</p>
+            </div>
+
+            <div className="role-subsection">
               <h5>What's Next</h5>
-              <p>I'm coming back for another term, but this time I'll be diving into more technical work—building new features and working with APIs. Excited to get more hands-on with the code!</p>
+              <p>I'm coming back for another term, but this time I'll be diving into more technical work—building new features and working with APIs. I'm excited to get more hands-on with the code and apply what I learned about product thinking to the technical implementation.</p>
+              <p>Having that product management experience will be really valuable when I'm building features. I'll have a better sense of what users actually need and how to prioritize my work.</p>
             </div>
           </div>
         )}
@@ -191,6 +204,22 @@ const ProjectDetail = ({ project, onBack }) => {
                 </div>
               </div>
             </div>
+
+            <div className="role-subsection">
+              <h5>Building the Dashboard</h5>
+              <p>One of the bigger challenges was building a dashboard that could handle real-time financial data without feeling laggy. I spent a lot of time optimizing how we fetched and displayed market data, using React hooks to manage state efficiently and implementing proper loading states.</p>
+              <p>The portfolio tracking feature needed to show complex investment data in a way that made sense at a glance. I used Chart.js to create interactive visualizations that could drill down into specific time periods or asset classes. Getting the balance between detail and simplicity was tricky, but super rewarding once it clicked.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>AI Features</h5>
+              <p>We integrated AI to provide personalized investment insights and recommendations. This involved working with language models to analyze market trends and generate readable summaries for users. I helped design the prompts and structure the output so it felt natural and actually useful.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>The Experience</h5>
+              <p>Working at Encore was a great learning experience. The team was small but really talented, and I got to wear a lot of different hats. Going from designing a feature to building it to testing it gave me a much better sense of the full product development cycle. Plus, working in fintech meant I had to think carefully about security and data handling, which was great practice for building production-ready software.</p>
+            </div>
           </div>
         )}
 
@@ -247,6 +276,24 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Subscription Flow</h5>
+              <p>Building the subscription logic was more complex than I initially thought. We had three tiers—free trial, standard, and premium—and each needed different access levels for features like AI meal planning, advanced dietary filters, and premium recipes. I had to think through all the edge cases: what happens when someone's trial expires? What if they cancel mid-cycle? How do we handle failed payments?</p>
+              <p>I ended up creating a state machine to handle all the different subscription states, which made the logic much cleaner and easier to debug. This was one of those moments where the initial complexity felt overwhelming, but breaking it down into smaller pieces made it all click.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Payment Integration</h5>
+              <p>Integrating Stripe was my first time working with a payment processor, and there was definitely a learning curve. The tricky part was making sure the payment flow worked seamlessly with Firebase authentication—users needed to be able to upgrade without losing their session or having to re-authenticate.</p>
+              <p>I spent a lot of time testing different scenarios: successful payments, failed payments, refunds, subscription cancellations. Stripe's webhooks were super helpful here for handling events asynchronously. Getting the whole flow working smoothly was really satisfying.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>The Experience</h5>
+              <p>Working at Aeon was a great introduction to the startup world. The team was small, which meant I had a lot of ownership and got to see how decisions were made quickly. Working directly with the founder gave me insight into product strategy and how technical decisions impact the business.</p>
+              <p>This was also my first time working with FlutterFlow, which was interesting. It's a no-code platform, but we still had to write custom code for the payment logic. Learning to work within those constraints taught me a lot about flexibility and finding creative solutions.</p>
             </div>
           </div>
         )}
