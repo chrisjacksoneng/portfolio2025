@@ -36,7 +36,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "Full Stack Developer",
       description: "Full Stack Developer building and testing paywall designs with Stripe integration",
-      image: "/images/AeonBg (2).png",
+      image: "/images/AeonBg (4).png",
       tech: "React.js, Stripe, Full Stack"
     },
     {

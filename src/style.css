@@ -290,6 +290,71 @@ body {
   padding: 1rem 0;
 }
 
+/* Project Meta Section under images */
+.project-meta {
+  margin-top: 0.75rem;
+  padding: 1.25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.015)
+  );
+  border: 1px solid #272727;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+}
+
+.project-meta h4 {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.project-meta p {
+  font-size: 0.98rem;
+  color: #ffffff;
+}
+
+.project-meta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-meta-group p {
+  color: #e5e5e5;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool-chip {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #121212;
+  border: 1px solid #2f2f2f;
+  color: #eaeaea;
+  font-size: 0.8rem;
+}
+
+.project-meta-right p {
+  color: #dcdcdc;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .project-meta {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 .project-title {
   font-size: 1.4rem;
   font-weight: 600;
@@ -492,6 +557,35 @@ body {
   object-position: center;
   display: block;
   transition: box-shadow 0.3s ease;
+}
+
+/* Aeon (id 4) detail: preserve true image shape and transparency */
+.aeon-detail {
+  background: transparent;
+  aspect-ratio: auto;
+  overflow: visible;
+  box-shadow: none;
+  max-width: 1200px; /* enlarge Aeon detail presentation */
+  width: min(60vw, 1200px);
+  transform: translateY(
+    -120px
+  ); /* move image up without affecting layout above */
+}
+
+.aeon-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* Shape-following glow using the image alpha */
+  filter: drop-shadow(0 0 25px rgba(66, 37, 116, 0.6))
+    drop-shadow(0 0 45px rgba(66, 37, 116, 0.5))
+    drop-shadow(0 0 75px rgba(66, 37, 116, 0.35));
+}
+
+/* Disable default Aeon container glow when using shape-following image glow */
+.aeon-detail.project-glow-4 {
+  box-shadow: none !important;
 }
 
 .project-detail-description {

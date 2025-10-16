@@ -18,7 +18,7 @@ const ProjectDetail = ({ project, onBack }) => {
 
   const getImageTransform = (projectId) => {
     if (projectId === 1) return 'translateY(40px) scale(1.3)' // WAT.ai
-    if (projectId === 4) return 'translateX(-10px) scale(1.4)' // Aeon
+    if (projectId === 4) return 'none' // Aeon: preserve true shape without scaling
     return 'scale(1.15)' // Default - matches home page scaling
   }
 
@@ -39,11 +39,11 @@ const ProjectDetail = ({ project, onBack }) => {
         <h1 className="project-detail-title">{project.title}</h1>
         <h2 className="project-detail-job-title">{project.jobTitle}</h2>
         
-        <div className={`project-detail-image-container project-glow-${project.id}`}>
+        <div className={`project-detail-image-container project-glow-${project.id} ${project.id === 4 ? 'aeon-detail' : ''}`}>
           <img 
             src={project.image} 
             alt={project.title}
-            className="project-detail-image"
+            className={`project-detail-image ${project.id === 4 ? 'aeon-image' : ''}`}
             style={{
               transform: getImageTransform(project.id)
             }}
