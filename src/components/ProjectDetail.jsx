@@ -321,7 +321,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 4 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. The team was pretty small, so I got to work directly with the founder on building out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
+            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. I worked closely with <a href="https://www.linkedin.com/in/jayden-ferrer/" target="_blank" rel="noopener noreferrer" className="team-member-link">Jayden Ferrer</a>, under <a href="https://www.linkedin.com/in/primiecegnar/" target="_blank" rel="noopener noreferrer" className="team-member-link">Primie Cegnar</a>, to build out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
 
             <div className="role-subsection">
               <h5>What I Built</h5>
@@ -334,7 +334,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Paywall Implementation</strong>
-                    <p>I built the access control logic for the different subscription tiers—free trial, standard, and premium. This involved figuring out how to gate features properly and handle subscription states across the app.</p>
+                    <p>I built the access control logic for the different subscription tiers—free trial, standard, and premium. This involved figuring out how to gate features properly and handle subscription states across the app. We also did extensive research on other paywall designs to find inspiration and analyze best practices.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -345,7 +345,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Stripe & Firebase Integration</strong>
-                    <p>I integrated Stripe for payment processing and connected it with Firebase for user authentication. This was tricky at first—getting the payment flow to work smoothly with user sessions took some iteration, but it was satisfying once everything clicked.</p>
+                    <p>I integrated Stripe for payment processing and connected it with Firebase for user authentication. We spent significant time troubleshooting the Stripe integration and deployment process. While we weren't able to fully overcome the deployment issues within the timeframe, the process deepened my understanding of payment gateways and the complexities of payment system integration.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -356,7 +356,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Front-End Design & UX</strong>
-                    <p>I worked on the paywall UI and helped design the user flow for subscriptions. Making the upgrade experience feel smooth and not pushy was important here.</p>
+                    <p>I worked on the paywall UI in Figma and helped design the user flow for subscriptions. We consistently sent screenshots and demo videos to Primie, and the feedback was almost always positive. It was clear the designs met the project goals.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -367,28 +367,23 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Testing & Documentation</strong>
-                    <p>I did a lot of testing to catch edge cases and wrote up documentation for the team. Payment flows have a lot of moving parts, so having clear docs was super helpful.</p>
+                    <p>I created scenario videos replicating what would happen on the live app and wrote comprehensive developer documentation detailing the paywall setup, configuration, and maintenance steps. We also documented the problems we encountered and how future developers should approach them.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="role-subsection">
-              <h5>Subscription Flow</h5>
-              <p>Building the subscription logic was more complex than I initially thought. We had three tiers—free trial, standard, and premium—and each needed different access levels for features like AI meal planning, advanced dietary filters, and premium recipes. I had to think through all the edge cases: what happens when someone's trial expires? What if they cancel mid-cycle? How do we handle failed payments?</p>
-              <p>I ended up creating a state machine to handle all the different subscription states, which made the logic much cleaner and easier to debug. This was one of those moments where the initial complexity felt overwhelming, but breaking it down into smaller pieces made it all click.</p>
-            </div>
-
-            <div className="role-subsection">
-              <h5>Payment Integration</h5>
-              <p>Integrating Stripe was my first time working with a payment processor, and there was definitely a learning curve. The tricky part was making sure the payment flow worked seamlessly with Firebase authentication—users needed to be able to upgrade without losing their session or having to re-authenticate.</p>
-              <p>I spent a lot of time testing different scenarios: successful payments, failed payments, refunds, subscription cancellations. Stripe's webhooks were super helpful here for handling events asynchronously. Getting the whole flow working smoothly was really satisfying.</p>
+              <h5>Technical Challenges</h5>
+              <p>One of the biggest challenges we faced was with the Stripe integration and deployment process. Despite spending significant time troubleshooting and testing different approaches, we weren't able to fully overcome these deployment issues within the timeframe given. However, this experience taught me a lot about the complexities of payment system integration and deployment.</p>
+              <p>We also ran into challenges with Stripe price configuration and Firebase rules. Working through these problems helped me understand the technical requirements behind payment gateways and the importance of thorough documentation for future developers.</p>
             </div>
 
             <div className="role-subsection">
               <h5>The Experience</h5>
-              <p>Working at Aeon was a great introduction to the startup world. The team was small, which meant I had a lot of ownership and got to see how decisions were made quickly. Working directly with the founder gave me insight into product strategy and how technical decisions impact the business.</p>
-              <p>This was also my first time working with FlutterFlow, which was interesting. It's a no-code platform, but we still had to write custom code for the payment logic. Learning to work within those constraints taught me a lot about flexibility and finding creative solutions.</p>
+              <p>Working at Aeon was a great introduction to the startup world. The team was small, which meant I had a lot of ownership and got to see how decisions were made quickly. Working directly with Primie gave me insight into product strategy and how technical decisions impact the business.</p>
+              <p>This was my first time working with payment infrastructure and subscription systems. Learning to work within platform constraints and dealing with complex integrations taught me a lot about flexibility and finding creative solutions.</p>
+              <p>I'm proud of what we accomplished—we contributed concrete deliverables including paywall designs, architectural planning, and user flow strategies that will support future implementation. This experience strengthened both my design and problem-solving skills, while giving me a deeper appreciation for the collaboration and persistence needed to bring new features to life.</p>
             </div>
           </div>
         )}

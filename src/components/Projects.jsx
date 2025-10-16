@@ -41,7 +41,7 @@ const Projects = ({ onProjectClick }) => {
       jobTitle: "Full Stack Developer",
       description: "Developed subscription paywall system for StellaEats, Canada's first dietary-first AI-powered food marketplace. Integrated Stripe payments with Firebase authentication and built access control logic for free trial, standard, and premium tiers.",
       image: "./images/AeonBg (4).png",
-      tech: "React.js, Stripe, Full Stack"
+      tech: "React.js, Stripe, Firebase, Figma, API Integration, Payment Systems, Subscription Management, UX Design"
     },
     {
       id: 5,
