@@ -515,11 +515,11 @@ body {
 }
 
 .project-detail-title {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2.6rem;
+  font-weight: 800;
   font-style: italic;
   font-family: "Cormorant Garamond", "Times New Roman", serif;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
   background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -527,10 +527,24 @@ body {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   letter-spacing: 0.3px;
   line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-detail-title::before,
+.project-detail-title::after {
+  content: "";
+  flex: 1 1 0;
+  display: block;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  min-width: 60px;
+  border: none;
 }
 
 .project-detail-job-title {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: #cccccc;
   margin: 0 0 3rem 0;
@@ -538,7 +552,7 @@ body {
 }
 
 .project-detail-image-container {
-  margin: 2rem 0;
+  margin: 0rem 0;
   position: relative;
   max-width: 700px;
   width: 100%;
