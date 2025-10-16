@@ -329,7 +329,7 @@ const ProjectDetail = ({ project, onBack }) => {
                 <div className="contribution-item">
                   <div className="contribution-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12,1L8,5H11V14H13V5H16M18,23H6C4.89,23 4,22.1 4,21V9A2,2 0 0,1 6,7H9V9H6V21H18V9H15V7H18A2,2 0 0,1 20,9V21A2,2 0 0,1 18,23Z" />
+                      <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
                     </svg>
                   </div>
                   <div className="contribution-text">
@@ -371,6 +371,26 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="role-subsection">
+              <h5>System Architecture</h5>
+              <p>We designed a comprehensive system architecture to handle user registration, subscription management, and content access control. The architecture integrated Firebase for authentication, Stripe for payment processing, and Firestore as the primary database.</p>
+              <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+                <img
+                  src="./images/aeonArchitecture.png"
+                  alt="Aeon Architecture Diagram"
+                  style={{
+                    width: '100%',
+                    maxWidth: '750px',
+                    borderRadius: '8px',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: '0 0 40px rgba(255, 255, 255, 0.3), 0 0 80px rgba(255, 255, 255, 0.15), 0 0 120px rgba(255, 255, 255, 0.08)',
+                    filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.25))'
+                  }}
+                />
+              </div>
+              <p>The system included several key modules: a User Authentication Module for registration and initial setup, a Subscription Module for managing premium subscriptions, a Tier-Level Access Module for controlling content based on user roles, and an Admin Control Module for administrative oversight. The architecture ensured that content access was dynamically controlled based on subscription status, with Stripe webhooks keeping the system synchronized with payment events.</p>
             </div>
 
             <div className="role-subsection">
