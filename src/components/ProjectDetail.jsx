@@ -61,7 +61,7 @@ const ProjectDetail = ({ project, onBack }) => {
               <p>{project.jobTitle}</p>
             </div>
             <div className="detail-meta-group">
-              <h4>Tools</h4>
+              <h4>Tools & Skills</h4>
               <div className="detail-tools">
                 {(project.tech || '').split(',').map(t => (
                   <span key={t.trim()} className="tool-chip">{t.trim()}</span>
@@ -73,10 +73,6 @@ const ProjectDetail = ({ project, onBack }) => {
             <h4>Overview</h4>
             <p>{project.overview || project.description}</p>
           </div>
-        </div>
-
-        <div className="project-detail-description">
-          <p>{project.description}</p>
         </div>
       </div>
     </div>

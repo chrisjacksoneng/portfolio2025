@@ -24,13 +24,7 @@ function App() {
       <Projects onProjectClick={handleProjectClick} />
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-left">
-            <p>Like what you see? Please don't hesitate to reach out! I'd love to connect and chat about opportunities :) </p>
-          </div>
-          <div className="footer-right">
-            <a href="mailto:2chrisjackson@gmail.com" className="footer-link">Email</a>
-            <a href="https://www.linkedin.com/in/chrisjackson-/" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
-          </div>
+          <p>&copy; 2025 Chris Jackson</p>
         </div>
       </footer>
     </div>
