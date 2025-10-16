@@ -60,18 +60,18 @@ const ProjectDetail = ({ project, onBack }) => {
               <h4>Role</h4>
               <p>{project.jobTitle}</p>
             </div>
-            <div className="detail-meta-group">
-              <h4>Tools & Skills</h4>
-              <div className="detail-tools">
-                {(project.tech || '').split(',').map(t => (
-                  <span key={t.trim()} className="tool-chip">{t.trim()}</span>
-                ))}
-              </div>
-            </div>
           </div>
           <div className="detail-meta-right">
             <h4>Synopsis</h4>
             <p>{project.synopsis || project.description}</p>
+          </div>
+          <div className="detail-meta-group detail-tools-section">
+            <h4>Tools & Skills</h4>
+            <div className="detail-tools">
+              {(project.tech || '').split(',').map(t => (
+                <span key={t.trim()} className="tool-chip">{t.trim()}</span>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -248,7 +248,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 3 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>Over the summer, I joined a small student team at Encore Financial, working with <a href="https://www.linkedin.com/in/hasanjee/" target="_blank" rel="noopener noreferrer" className="team-member-link">Bilal Hasanjee</a> to build a prototype for an AI-powered financial platform. We were building something pretty ambitious—a full suite for investment research, portfolio management, and wealth tracking. Working remotely with this team gave me a ton of ownership and let me dive deep into both frontend and backend work.</p>
+            <p>Over the summer of 2025, I joined a small team at Encore Financial, working with <a href="https://www.linkedin.com/in/hasanjee/" target="_blank" rel="noopener noreferrer" className="team-member-link">Bilal Hasanjee</a> to build a prototype for an AI-powered financial platform. We were building something pretty ambitious—a full suite for investment research, portfolio management, and wealth tracking. Working remotely with this team gave me a ton of ownership and let me dive deep into both frontend and backend work.</p>
 
             <div className="role-subsection">
               <h5>What I Built</h5>
@@ -321,7 +321,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 4 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, which is Canada's first AI-powered food marketplace focused on dietary needs. The team was pretty small, so I got to work directly with the founder on building out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
+            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. The team was pretty small, so I got to work directly with the founder on building out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
 
             <div className="role-subsection">
               <h5>What I Built</h5>

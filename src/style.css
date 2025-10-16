@@ -687,6 +687,11 @@ body {
   gap: 1rem;
 }
 
+.detail-tools-section {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+}
+
 .detail-tools {
   display: flex;
   flex-wrap: wrap;
@@ -710,6 +715,10 @@ body {
   .detail-meta {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .detail-tools-section {
+    grid-column: 1;
   }
 }
 
