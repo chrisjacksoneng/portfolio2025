@@ -31,6 +31,12 @@ body {
   padding: 1rem 0;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+}
+
 .navbar-content {
   width: 100%;
   padding: 0;
@@ -421,7 +427,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .app {
-    padding: 5rem 1rem 1rem 1rem; /* Adjusted for mobile navbar */
+    padding: 1rem 1rem 1rem 1rem; /* Reduced top padding for mobile */
   }
 
   .navbar-content {
@@ -503,7 +509,7 @@ body {
 
 @media (max-width: 480px) {
   .app {
-    padding: 4.5rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
 
   .name {
