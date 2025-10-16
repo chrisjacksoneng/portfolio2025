@@ -588,7 +588,7 @@ body {
 
 .detail-meta h4 {
   font-size: 0.95rem;
-  color: #bdbdbd;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 0.35rem;
   text-align: left;
@@ -596,7 +596,7 @@ body {
 
 .detail-meta p {
   font-size: 1rem;
-  color: #eaeaea;
+  color: #bdbdbd;
   text-align: left;
 }
 
@@ -612,8 +612,15 @@ body {
   gap: 0.5rem;
 }
 
+.detail-meta-right h4 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  text-align: left;
+}
+
 .detail-meta-right p {
-  color: #dcdcdc;
+  color: #bdbdbd;
   line-height: 1.7;
   text-align: left;
 }
@@ -702,7 +709,7 @@ body {
 
 .about-this-role-section h4 {
   font-size: 0.95rem;
-  color: #bdbdbd;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 0.35rem;
   text-align: left;
@@ -710,7 +717,7 @@ body {
 
 .about-this-role-section p {
   font-size: 1rem;
-  color: #eaeaea;
+  color: #bdbdbd;
   text-align: left;
   line-height: 1.6;
   margin: 0;
