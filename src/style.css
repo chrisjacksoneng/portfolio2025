@@ -479,8 +479,10 @@ body {
   width: 100%;
   aspect-ratio: 2 / 1;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0;
   background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .project-detail-image {
@@ -502,6 +504,33 @@ body {
   color: #ffffff;
   line-height: 1.6;
   margin: 0;
+}
+
+/* Project-specific glow effects for detail pages */
+.project-detail-image-container.project-glow-1 {
+  box-shadow: 0 0 30px rgba(255, 206, 26, 0.6); /* FFCE1A for WAT.ai */
+}
+
+.project-detail-image-container.project-glow-2 {
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote */
+}
+
+.project-detail-image-container.project-glow-3 {
+  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6); /* F96210 for Encore */
+}
+
+.project-detail-image-container.project-glow-4 {
+  box-shadow: 0 0 80px 15px rgba(66, 37, 116, 0.9),
+    0 0 40px 5px rgba(66, 37, 116, 0.7), 0 0 20px rgba(66, 37, 116, 0.5),
+    inset 0 0 30px rgba(66, 37, 116, 0.3); /* Multi-layered dramatic 422574 glow for Aeon */
+}
+
+.project-detail-image-container.project-glow-5 {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.6); /* Orange for Gradepad */
+}
+
+.project-detail-image-container.project-glow-6 {
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote Special */
 }
 
 /* Footer Styles */
