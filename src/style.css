@@ -591,11 +591,13 @@ body {
   color: #bdbdbd;
   font-weight: 600;
   margin-bottom: 0.35rem;
+  text-align: left;
 }
 
 .detail-meta p {
   font-size: 1rem;
   color: #eaeaea;
+  text-align: left;
 }
 
 .detail-meta-left {
@@ -613,6 +615,7 @@ body {
 .detail-meta-right p {
   color: #dcdcdc;
   line-height: 1.7;
+  text-align: left;
 }
 
 @media (max-width: 900px) {
