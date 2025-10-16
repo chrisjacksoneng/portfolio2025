@@ -30,7 +30,7 @@ const Projects = ({ onProjectClick }) => {
       timeline: "Jun. 2025 - Present",
       jobTitle: "AI Software Engineer",
       description: "AI Software Engineer focused on AI & fintech innovation and development",
-      image: "./images/EncoreBg (3).png",
+      image: "./images/EncoreBg (7).png",
       tech: "React.js, AI, Fintech"
     },
     {

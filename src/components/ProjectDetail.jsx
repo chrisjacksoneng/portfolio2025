@@ -78,10 +78,10 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 6 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>During my first co-op term at QQuote, working under <a href="https://www.linkedin.com/in/nathan-hufnagel-a3b5bb35/" target="_blank" rel="noopener noreferrer" className="team-member-link">Nathan Hufnagel</a>, I had the opportunity to contribute across several areas, with a focus on product management and process improvement. I decided to accept their return offer to continue working with the team, this time taking on a more technical role focused on software development.</p>
+            <p>I spent my first co-op term at QQuote working with <a href="https://www.linkedin.com/in/nathan-hufnagel-a3b5bb35/" target="_blank" rel="noopener noreferrer" className="team-member-link">Nathan Hufnagel</a>, and it was a great introduction to product management and the full product lifecycle. I got to work across a bunch of different areas, from designing features to testing them. The team was awesome, and I liked it enough that I decided to come back for another term—this time focusing more on the technical side of things.</p>
 
             <div className="role-subsection">
-              <h5>Key Contributions</h5>
+              <h5>What I Worked On</h5>
               <div className="contributions-grid">
                 <div className="contribution-item">
                   <div className="contribution-icon">
@@ -91,7 +91,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Feature Specifications</strong>
-                    <p>Created detailed feature specifications and developed requirements to guide development</p>
+                    <p>I wrote detailed feature specs and requirements to help guide the development team. This was my first real experience thinking through how features should work from a product perspective.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -102,7 +102,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Design & Wireframes</strong>
-                    <p>Designed wireframes and mockups to bring new product ideas to life</p>
+                    <p>I created wireframes and mockups to visualize new product ideas. This was fun—getting to think about the user experience and how things should look and feel.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -113,7 +113,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>QA Testing</strong>
-                    <p>Supported QA testing and helped validate product behaviour through scenario testing</p>
+                    <p>I helped with QA testing and ran through different scenarios to make sure features worked as expected. It was satisfying catching bugs before they made it to users.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -124,15 +124,15 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Documentation</strong>
-                    <p>Wrote internal documentation to support team processes and future projects</p>
+                    <p>I wrote up internal docs to help with team processes and future projects. Good documentation makes everyone's life easier.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="role-subsection">
-              <h5>Next Steps</h5>
-              <p>For my upcoming term, I'll be transitioning into a more technical role, focusing on developing new features and working with APIs to enhance the product's functionality.</p>
+              <h5>What's Next</h5>
+              <p>I'm coming back for another term, but this time I'll be diving into more technical work—building new features and working with APIs. Excited to get more hands-on with the code!</p>
             </div>
           </div>
         )}
@@ -140,10 +140,10 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 3 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>As part of a collaborative student team at Encore Financial, working under <a href="https://www.linkedin.com/in/hasanjee/" target="_blank" rel="noopener noreferrer" className="team-member-link">Bilal Hasanjee</a>, I contributed to building a prototype for an intelligent Financial Application Suite focused on investment research, portfolio management, and wealth tracking. Working in an agile, remote team environment, I applied modern development practices to create a scalable fintech solution.</p>
+            <p>Over the summer, I joined a small student team at Encore Financial, working with <a href="https://www.linkedin.com/in/hasanjee/" target="_blank" rel="noopener noreferrer" className="team-member-link">Bilal Hasanjee</a> to build a prototype for an AI-powered financial platform. We were building something pretty ambitious—a full suite for investment research, portfolio management, and wealth tracking. Working remotely with this team gave me a ton of ownership and let me dive deep into both frontend and backend work.</p>
 
             <div className="role-subsection">
-              <h5>Key Contributions</h5>
+              <h5>What I Built</h5>
               <div className="contributions-grid">
                 <div className="contribution-item">
                   <div className="contribution-icon">
@@ -153,7 +153,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Front-End Development</strong>
-                    <p>Built responsive React components for financial dashboards, portfolio tracking, and interactive data visualizations</p>
+                    <p>I built out the React components for the financial dashboards and portfolio tracking features. This involved a lot of work with real-time data visualization and making sure everything felt responsive and fast.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -164,7 +164,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Back-End & API Integration</strong>
-                    <p>Developed server-side logic, integrated market data APIs, and implemented secure user authentication</p>
+                    <p>I worked on the server-side logic and integrated market data APIs to pull real-time financial information. Also handled user authentication and session management to keep everything secure.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -175,7 +175,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Data Visualization & Analytics</strong>
-                    <p>Created real-time performance dashboards with investment KPIs, historical charts, and AI-powered insights</p>
+                    <p>I created performance dashboards that showed investment KPIs, historical trends, and AI-generated insights. This was one of the more fun parts—figuring out how to make complex financial data easy to understand at a glance.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -186,15 +186,10 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>UX/UI Design</strong>
-                    <p>Designed wireframes, mockups, and user flow diagrams for core financial workflows and interfaces</p>
+                    <p>I designed wireframes and mockups for the core financial workflows. This was great practice thinking through user flows and making sure the experience felt intuitive, especially for something as complex as portfolio management.</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="role-subsection">
-              <h5>Technical Stack</h5>
-              <p>React, Node.js, Firebase, REST APIs, Chart.js, Figma, and modern fintech data modeling practices</p>
             </div>
           </div>
         )}
@@ -202,10 +197,10 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 4 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>As a student developer at Aeon Stellar Commerce Inc., I contributed to building a robust paywall system for StellaEats, Canada's first dietary-first AI-powered food marketplace. Working closely with the technical lead and founder, I implemented subscription access control logic and integrated payment infrastructure to create a seamless user experience for managing premium features.</p>
+            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, which is Canada's first AI-powered food marketplace focused on dietary needs. The team was pretty small, so I got to work directly with the founder on building out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
 
             <div className="role-subsection">
-              <h5>Key Contributions</h5>
+              <h5>What I Built</h5>
               <div className="contributions-grid">
                 <div className="contribution-item">
                   <div className="contribution-icon">
@@ -215,7 +210,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Paywall Implementation</strong>
-                    <p>Designed and implemented access control logic for free trial, standard, and premium subscription tiers</p>
+                    <p>I built the access control logic for the different subscription tiers—free trial, standard, and premium. This involved figuring out how to gate features properly and handle subscription states across the app.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -226,7 +221,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Stripe & Firebase Integration</strong>
-                    <p>Integrated Stripe payment processing with Firebase user authentication and session management</p>
+                    <p>I integrated Stripe for payment processing and connected it with Firebase for user authentication. This was tricky at first—getting the payment flow to work smoothly with user sessions took some iteration, but it was satisfying once everything clicked.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -237,7 +232,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Front-End Design & UX</strong>
-                    <p>Collaborated on paywall UI screens and user flow design to ensure seamless subscription experience</p>
+                    <p>I worked on the paywall UI and helped design the user flow for subscriptions. Making the upgrade experience feel smooth and not pushy was important here.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -248,15 +243,10 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Testing & Documentation</strong>
-                    <p>Conducted user testing, debugged edge cases, and delivered comprehensive technical documentation</p>
+                    <p>I did a lot of testing to catch edge cases and wrote up documentation for the team. Payment flows have a lot of moving parts, so having clear docs was super helpful.</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="role-subsection">
-              <h5>Technical Stack</h5>
-              <p>FlutterFlow, Firebase, Stripe, user authentication, subscription management, and mobile app architecture</p>
             </div>
           </div>
         )}
