@@ -29,8 +29,13 @@ function App() {
 
   const handleProjectClick = (project) => {
     setSelectedProject(project)
+    // Custom URL slugs for specific projects
+    const customSlugs = {
+      3: 'encore-financial', // Encore Financial Ltd
+      4: 'aeon' // Aeon Stellar Commerce
+    }
     // Create URL-friendly slug from project title
-    const urlSlug = project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+    const urlSlug = customSlugs[project.id] || project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
     // Push state to browser history so back button works
     window.history.pushState({ project }, '', `/${urlSlug}`)
     // Update browser title

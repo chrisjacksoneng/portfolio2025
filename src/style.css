@@ -632,6 +632,12 @@ body {
   }
 }
 
+/* QQuote projects (id 2, 6): lower the meta section */
+.project-detail-content:has(.project-glow-2) .detail-meta,
+.project-detail-content:has(.project-glow-6) .detail-meta {
+  margin-top: 5rem;
+}
+
 /* Aeon (id 4) detail: preserve true image shape and transparency */
 .aeon-detail {
   background: transparent;
