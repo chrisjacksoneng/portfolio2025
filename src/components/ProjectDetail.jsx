@@ -75,6 +75,62 @@ const ProjectDetail = ({ project, onBack }) => {
           </div>
         </div>
 
+        {project.id === 1 && (
+          <div className="about-this-role-section">
+            <h4>About This Role</h4>
+            <p>When I started at Waterloo, I set myself a goal of joining one of the prestigious design teams to really experience what the university has to offer. WAT.ai is one of those teams, and I was excited when I got in as a Machine Learning Engineer working on FORTif.ai.</p>
+
+            <div className="role-subsection">
+              <h5>The Project</h5>
+              <p>FORTif.ai is an AI-driven companion designed to help seniors live independently. It's a pretty ambitious project that combines proactive safety monitoring with personalized daily support. The goal is to give seniors the confidence to stay in their homes longer while giving their families peace of mind.</p>
+              <p>The system uses computer vision to continuously scan the home for potential hazards—things like spills, cluttered pathways, or tripping hazards. When it detects something, it provides clear, actionable recommendations to address the issue. At the same time, there's an AI chatbot that engages users in friendly conversations, offering medication and appointment reminders, wellness check-ins, and empathetic responses to questions.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Hazard Detection</h5>
+              <p>One of the core features I worked on was the hazard detection model. This uses computer vision to identify potential safety risks in real-time. Training a model to recognize things like spills or cluttered pathways is tricky—you need a good dataset, and you have to think about edge cases like different lighting conditions or camera angles.</p>
+              <p>We had to be careful about false positives too. You don't want to alarm users unnecessarily, but you also can't miss actual hazards. Finding that balance was challenging but really interesting from a machine learning perspective.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>AI Chatbot</h5>
+              <p>The chatbot component was another major part of the project. It needed to be conversational and empathetic, which meant thinking carefully about how we structured prompts and responses. The chatbot handles everything from medication reminders to wellness check-ins to answering questions about health and safety.</p>
+              <p>We also built in voice-to-text capabilities so users could interact with the system naturally, without having to type everything out. This made the whole experience more accessible and user-friendly.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>The Experience</h5>
+              <p>Working on WAT.ai has been a great experience. The team is talented and passionate, and working on a project with real social impact has been really motivating. Getting to work with cutting-edge AI and computer vision technology while solving a meaningful problem is exactly what I was hoping for when I joined.</p>
+              <p>It's also been great to collaborate with other disciplines—working with designers on the user experience, with other engineers on the technical implementation, and thinking about how to make the system actually useful for seniors. This kind of cross-functional work is really valuable.</p>
+            </div>
+          </div>
+        )}
+
+        {project.id === 2 && (
+          <div className="about-this-role-section">
+            <h4>About This Role</h4>
+            <p>I came back to QQuote for a second term after really enjoying my first co-op there. This time, I wanted to focus on the software development side of things. Having done product management work in my first term, I was excited to get more hands-on with the code and apply what I'd learned about user needs to the technical implementation.</p>
+
+            <div className="role-subsection">
+              <h5>API Development</h5>
+              <p>One of my main projects was working on a new API that would help both dealerships and our internal team automate their processes. I started by creating detailed specs for the API—defining the endpoints, request/response formats, authentication requirements, and error handling.</p>
+              <p>This was great practice thinking about API design from a developer's perspective. I had to consider things like: What data do dealerships actually need? How should we structure the responses to be useful but not overwhelming? What edge cases do we need to handle? Having the product management experience from my first term helped me think through these questions with the end user in mind.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>QA Automation</h5>
+              <p>I also worked on automating our QA process using Cypress.io. Manual testing was taking up a lot of time, and we needed a way to catch regressions quickly as we added new features. I built out automated test suites that would run on key user flows and critical paths.</p>
+              <p>Learning Cypress was interesting—it's a powerful tool that lets you write tests that actually interact with the browser like a real user would. I had to think about what scenarios were most important to test and how to structure the tests so they'd be maintainable as the product evolved.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>The Experience</h5>
+              <p>Coming back to QQuote for a second term was really rewarding. I already knew the team and the product, which meant I could jump into more complex projects right away. The combination of product management experience from my first term and technical work from this term gave me a much more complete picture of how software gets built.</p>
+              <p>Working on API development taught me a lot about system design and thinking about how different parts of a system communicate with each other. And the QA automation work showed me the importance of having good test coverage and catching bugs early in the development cycle.</p>
+            </div>
+          </div>
+        )}
+
         {project.id === 6 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
