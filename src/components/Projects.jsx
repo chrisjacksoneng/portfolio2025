@@ -9,7 +9,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "Machine Learning Engineer",
       description: "Machine Learning Engineer working on AI assistant for independent and safe living",
-      image: "/portfolio2025/images/WATaiBg (1).png",
+      image: "./images/WATaiBg (1).png",
       tech: "Machine Learning, AI, Python"
     },
     {
@@ -18,7 +18,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "Software Engineering Intern",
       description: "Software Engineering Intern working on internal APIs, product management, and process improvement",
-      image: "/portfolio2025/images/QQuoteBg.png",
+      image: "./images/QQuoteBg.png",
       tech: "Postman, Product Management, QA Testing"
     },
     {
@@ -27,7 +27,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "AI Software Engineer",
       description: "AI Software Engineer focused on AI & fintech innovation and development",
-      image: "/portfolio2025/images/EncoreBg (3).png",
+      image: "./images/EncoreBg (3).png",
       tech: "React.js, AI, Fintech"
     },
     {
@@ -36,7 +36,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "Full Stack Developer",
       description: "Full Stack Developer building and testing paywall designs with Stripe integration",
-      image: "/portfolio2025/images/AeonBg (4).png",
+      image: "./images/AeonBg (4).png",
       tech: "React.js, Stripe, Full Stack"
     },
     {
@@ -45,7 +45,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "Personal Project",
       description: "Personal project - A comprehensive grade tracking and academic management platform",
-      image: "/portfolio2025/images/gradepadrough.webp",
+      image: "./images/gradepadrough.webp",
       tech: "React, Node.js, Database"
     },
     {
@@ -54,7 +54,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       jobTitle: "Special Projects Engineering Assistant",
       description: "Special Projects Engineering Assistant developing analytical dashboards and supporting product management",
-      image: "/portfolio2025/images/QQuoteBg.png",
+      image: "./images/QQuoteBg.png",
       tech: "Figma, Product Management, Analytics"
     }
   ]
