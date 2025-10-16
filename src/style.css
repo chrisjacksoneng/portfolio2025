@@ -475,7 +475,7 @@ body {
 .project-detail-image-container {
   margin: 2rem 0;
   position: relative;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   aspect-ratio: 2 / 1;
   overflow: hidden;
@@ -496,7 +496,7 @@ body {
 
 .project-detail-description {
   margin-top: 3rem;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .project-detail-description p {
