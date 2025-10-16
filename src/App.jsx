@@ -12,9 +12,11 @@ function App() {
       if (event.state === null) {
         // Going back to homepage
         setSelectedProject(null)
+        document.title = 'Chris Jackson'
       } else {
         // Going to a project detail
         setSelectedProject(event.state.project)
+        document.title = `Chris Jackson | ${event.state.project.title}`
       }
     }
 
@@ -27,12 +29,18 @@ function App() {
 
   const handleProjectClick = (project) => {
     setSelectedProject(project)
+    // Create URL-friendly slug from project title
+    const urlSlug = project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
     // Push state to browser history so back button works
-    window.history.pushState({ project }, '', `#project-${project.id}`)
+    window.history.pushState({ project }, '', `/${urlSlug}`)
+    // Update browser title
+    document.title = `Chris Jackson | ${project.title}`
   }
 
   const handleBack = () => {
     setSelectedProject(null)
+    // Reset browser title
+    document.title = 'Chris Jackson'
     // Go back in browser history
     window.history.back()
   }
