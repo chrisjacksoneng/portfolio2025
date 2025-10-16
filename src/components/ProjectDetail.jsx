@@ -17,7 +17,7 @@ const ProjectDetail = ({ project, onBack }) => {
   }
 
   const getImageTransform = (projectId) => {
-    if (projectId === 1) return 'translateY(40px) scale(1.3)' // WAT.ai
+    if (projectId === 1) return 'none' // WAT.ai: preserve true shape without scaling
     if (projectId === 4) return 'none' // Aeon: preserve true shape without scaling
     return 'scale(1.15)' // Default - matches home page scaling
   }
@@ -39,17 +39,42 @@ const ProjectDetail = ({ project, onBack }) => {
         <h1 className="project-detail-title">{project.title}</h1>
         <h2 className="project-detail-job-title">{project.jobTitle}</h2>
         
-        <div className={`project-detail-image-container project-glow-${project.id} ${project.id === 4 ? 'aeon-detail' : ''}`}>
+        <div className={`project-detail-image-container project-glow-${project.id} ${project.id === 4 ? 'aeon-detail' : ''} ${project.id === 1 ? 'wat-detail' : ''}`}>
           <img 
             src={project.image} 
             alt={project.title}
-            className={`project-detail-image ${project.id === 4 ? 'aeon-image' : ''}`}
+            className={`project-detail-image ${project.id === 4 ? 'aeon-image' : ''} ${project.id === 1 ? 'wat-image' : ''}`}
             style={{
               transform: getImageTransform(project.id)
             }}
           />
         </div>
         
+        <div className="detail-meta">
+          <div className="detail-meta-left">
+            <div className="detail-meta-group">
+              <h4>Timeline</h4>
+              <p>{project.timeline || project.year}</p>
+            </div>
+            <div className="detail-meta-group">
+              <h4>Role</h4>
+              <p>{project.jobTitle}</p>
+            </div>
+            <div className="detail-meta-group">
+              <h4>Tools</h4>
+              <div className="detail-tools">
+                {(project.tech || '').split(',').map(t => (
+                  <span key={t.trim()} className="tool-chip">{t.trim()}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="detail-meta-right">
+            <h4>Overview</h4>
+            <p>{project.overview || project.description}</p>
+          </div>
+        </div>
+
         <div className="project-detail-description">
           <p>{project.description}</p>
         </div>
