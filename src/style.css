@@ -723,6 +723,76 @@ body {
   margin: 0;
 }
 
+.role-subsection {
+  margin-top: 1.5rem;
+}
+
+.role-subsection h5 {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contribution-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.contribution-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.contribution-icon {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.contribution-text strong {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contribution-text p {
+  color: #bdbdbd;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.team-member-link {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.6);
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+}
+
+.team-member-link:hover {
+  color: #cccccc;
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Project-specific glow effects for detail pages */
 .project-detail-image-container.project-glow-1 {
   box-shadow: 0 0 30px rgba(255, 206, 26, 0.6); /* FFCE1A for WAT.ai */

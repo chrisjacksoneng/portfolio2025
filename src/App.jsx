@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Projects from './components/Projects'
 import ProjectDetail from './components/ProjectDetail'
@@ -6,12 +6,35 @@ import ProjectDetail from './components/ProjectDetail'
 function App() {
   const [selectedProject, setSelectedProject] = useState(null)
 
+  // Listen for browser back/forward button clicks
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (event.state === null) {
+        // Going back to homepage
+        setSelectedProject(null)
+      } else {
+        // Going to a project detail
+        setSelectedProject(event.state.project)
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState)
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
+
   const handleProjectClick = (project) => {
     setSelectedProject(project)
+    // Push state to browser history so back button works
+    window.history.pushState({ project }, '', `#project-${project.id}`)
   }
 
   const handleBack = () => {
     setSelectedProject(null)
+    // Go back in browser history
+    window.history.back()
   }
 
   if (selectedProject) {
