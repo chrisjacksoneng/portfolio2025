@@ -411,12 +411,12 @@ const ProjectDetail = ({ project, onBack }) => {
                 <div className="contribution-item">
                   <div className="contribution-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                      <path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" />
                     </svg>
                   </div>
                   <div className="contribution-text">
-                    <strong>Paywall Implementation</strong>
-                    <p>I built the access control logic for the different subscription tiers—free trial, standard, and premium. This involved figuring out how to gate features properly and handle subscription states across the app. We also did extensive research on other paywall designs to find inspiration and analyze best practices.</p>
+                    <strong>Front-End Design & UX</strong>
+                    <p>I worked on the paywall UI in Figma and helped design the user flow for subscriptions. We consistently sent screenshots and demo videos to Primie, and the feedback was almost always positive. It was clear the designs met the project goals.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -427,18 +427,18 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Stripe & Firebase Integration</strong>
-                    <p>I integrated <strong>Stripe</strong> for payment processing and connected it with <strong>Firebase</strong> for user authentication. We spent significant time troubleshooting the Stripe integration and deployment process. While we weren't able to fully overcome the deployment issues within the timeframe, the process deepened my understanding of payment gateways and the complexities of payment system integration.</p>
+                    <p>I integrated <strong>Stripe</strong> for payment processing and connected it with <strong>Firebase</strong> for user authentication. We spent significant time troubleshooting the Stripe integration and deployment process. However, it was ultimately worth it when we got a working product!</p>
                   </div>
                 </div>
                 <div className="contribution-item">
                   <div className="contribution-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" />
+                      <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
                     </svg>
                   </div>
                   <div className="contribution-text">
-                    <strong>Front-End Design & UX</strong>
-                    <p>I worked on the paywall UI in Figma and helped design the user flow for subscriptions. We consistently sent screenshots and demo videos to Primie, and the feedback was almost always positive. It was clear the designs met the project goals.</p>
+                    <strong>Paywall Implementation</strong>
+                    <p>I built the access control logic for the different subscription tiers—free trial, standard, and premium. This involved figuring out how to gate features properly and handle subscription states across the app. We also did extensive research on other paywall designs to find inspiration and analyze best practices.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
