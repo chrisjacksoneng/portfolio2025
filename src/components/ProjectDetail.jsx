@@ -310,18 +310,18 @@ const ProjectDetail = ({ project, onBack }) => {
               <h5>AI Carousel Interface</h5>
               <p>I built a carousel interface to help users navigate through different AI prompt options. This made it easy for users to explore various research queries and see what the AI could help them with, without having to type everything out manually. When a user clicks on any analysis module, it opens a chatbot page with a pre-filled prompt based on what was clicked, immediately starting a conversation with the AI.</p>
 
-              <p>This was one of the more complex features to implement. I built a custom React carousel from scratch using useState for state management and Tailwind CSS for styling. The coverflow effect required careful manipulation of CSS transform properties, z-index layering for proper depth perception, and optimized transition timing functions to ensure smooth animations.</p>
-
-              <p>I implemented a card positioning algorithm that calculated dynamic offsets based on the current index, handling edge cases for the first and last cards. The navigation logic involved debouncing to prevent rapid state changes and ensuring proper boundary conditions.</p>
-
-              <p>I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders. I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', marginBottom: '1rem' }}>
+                <li><strong>Coverflow Effect:</strong> This was one of the more complex features to implement. I built a custom React carousel from scratch using useState for state management and Tailwind CSS for styling. The coverflow effect required careful manipulation of CSS transform properties, z-index layering for proper depth perception, and optimized transition timing functions to ensure smooth animations.</li>
+                <li><strong>Card Positioning & Navigation:</strong> I implemented a card positioning algorithm that calculated dynamic offsets based on the current index, handling edge cases for the first and last cards. The navigation logic involved debouncing to prevent rapid state changes and ensuring proper boundary conditions.</li>
+                <li><strong>Performance Optimization:</strong> I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders. I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</li>
+              </ul>
 
               <p>The video below is an MVP demo I created to showcase the design, following NDA guidelines.</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
                   maxWidth: '750px',
-                  height: '360px',
+                  aspectRatio: '16/9',
                   overflow: 'hidden',
                   borderRadius: '8px',
                   border: '1px solid rgba(255, 255, 255, 0.2)',
@@ -336,7 +336,7 @@ const ProjectDetail = ({ project, onBack }) => {
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'contain',
+                      objectFit: 'cover',
                       objectPosition: 'center'
                     }}
                   >
@@ -354,7 +354,7 @@ const ProjectDetail = ({ project, onBack }) => {
                 <div style={{
                   width: '100%',
                   maxWidth: '750px',
-                  height: '360px',
+                  aspectRatio: '16/9',
                   overflow: 'hidden',
                   borderRadius: '8px',
                   border: '1px solid rgba(255, 255, 255, 0.2)',
@@ -369,7 +369,7 @@ const ProjectDetail = ({ project, onBack }) => {
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'contain',
+                      objectFit: 'cover',
                       objectPosition: 'center'
                     }}
                   >

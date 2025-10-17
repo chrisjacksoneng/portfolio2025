@@ -847,6 +847,19 @@ body {
   margin: 0;
 }
 
+.about-this-role-section ul {
+  text-align: left;
+}
+
+.about-this-role-section li {
+  text-align: left;
+  color: #bdbdbd;
+}
+
+.about-this-role-section li strong {
+  color: #ffffff;
+}
+
 .role-subsection {
   margin-top: 1.5rem;
 }
