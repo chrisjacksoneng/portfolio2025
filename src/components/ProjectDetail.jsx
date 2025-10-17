@@ -403,7 +403,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 4 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. I worked closely with <a href="https://www.linkedin.com/in/jayden-ferrer/" target="_blank" rel="noopener noreferrer" className="team-member-link">Jayden Ferrer</a>, under <a href="https://www.linkedin.com/in/primiecegnar/" target="_blank" rel="noopener noreferrer" className="team-member-link">Primie Cegnar</a>, to build out the paywall system. This was my first real experience working with <strong>payment infrastructure</strong> and <strong>subscription logic</strong>, which was both challenging and really rewarding.</p>
+            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. I worked closely with <a href="https://www.linkedin.com/in/jayden-ferrer/" target="_blank" rel="noopener noreferrer" className="team-member-link">Jayden Ferrer</a>, under <a href="https://www.linkedin.com/in/primiecegnar/" target="_blank" rel="noopener noreferrer" className="team-member-link">Primie Cegnar</a>, to build out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
 
             <div className="role-subsection">
               <h5>What I Built</h5>
@@ -467,8 +467,8 @@ const ProjectDetail = ({ project, onBack }) => {
                     maxWidth: '750px',
                     borderRadius: '8px',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    boxShadow: '0 0 40px rgba(255, 255, 255, 0.3), 0 0 80px rgba(255, 255, 255, 0.15), 0 0 120px rgba(255, 255, 255, 0.08)',
-                    filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.25))'
+                    boxShadow: '0 0 20px rgba(255, 255, 255, 0.15), 0 0 40px rgba(255, 255, 255, 0.08)',
+                    filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.15))'
                   }}
                 />
               </div>
