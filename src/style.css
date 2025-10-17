@@ -847,6 +847,10 @@ body {
   margin: 0;
 }
 
+.about-this-role-section p strong {
+  color: #ffffff;
+}
+
 .about-this-role-section ul {
   text-align: left;
 }
