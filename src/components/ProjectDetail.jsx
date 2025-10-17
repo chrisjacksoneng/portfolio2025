@@ -312,11 +312,11 @@ const ProjectDetail = ({ project, onBack }) => {
 
               <p>This was one of the more complex features to implement. I built a custom React carousel from scratch using useState for state management and Tailwind CSS for styling. The coverflow effect required careful manipulation of CSS transform properties, z-index layering for proper depth perception, and optimized transition timing functions to ensure smooth animations.</p>
 
-              <p>I implemented a card positioning algorithm that calculated dynamic offsets based on the current index, handling edge cases for the first and last cards. The navigation logic involved debouncing to prevent rapid state changes and ensuring proper boundary conditions. I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders.</p>
+              <p>I implemented a card positioning algorithm that calculated dynamic offsets based on the current index, handling edge cases for the first and last cards. The navigation logic involved debouncing to prevent rapid state changes and ensuring proper boundary conditions.</p>
 
-              <p>I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</p>
+              <p>I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders. I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</p>
 
-              <p>The video below is an MVP demo I created to showcase the design. Due to the NDA, I couldn't show the actual prompts we used, which is why you see generic names like "Analysis Module A, Analysis Module B" instead of the real content.</p>
+              <p>The video below is an MVP demo I created to showcase the design, following NDA guidelines.</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
@@ -349,7 +349,7 @@ const ProjectDetail = ({ project, onBack }) => {
             <div className="role-subsection">
               <h5>Deep Research Model</h5>
               <p>I also worked on implementing the deep research feature, which allowed users to get comprehensive, in-depth analysis on specific topics. The model would pull from multiple sources and provide detailed insights that went beyond surface-level information.</p>
-              <p>The video below is an MVP demo I created to showcase the design. Due to the NDA, I couldn't show the actual prompts we used, which is why you see generic names like "Analysis Module A, Analysis Module B" instead of the real content.</p>
+              <p>The video below is an MVP demo I created to showcase the design, following NDA guidelines.</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
