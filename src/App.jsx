@@ -6,6 +6,13 @@ import ProjectDetail from './components/ProjectDetail'
 function App() {
   const [selectedProject, setSelectedProject] = useState(null)
 
+  // Disable browser scroll restoration
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
+  }, [])
+
   // Listen for browser back/forward button clicks
   useEffect(() => {
     const handlePopState = (event) => {
@@ -46,12 +53,10 @@ function App() {
     setSelectedProject(null)
     // Reset browser title
     document.title = 'Chris Jackson'
+    // Scroll to top immediately before going back
+    window.scrollTo(0, 0)
     // Go back in browser history
     window.history.back()
-    // Scroll to top after navigation completes
-    setTimeout(() => {
-      window.scrollTo(0, 0)
-    }, 0)
   }
 
   if (selectedProject) {
