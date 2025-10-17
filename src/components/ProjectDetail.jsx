@@ -2,7 +2,16 @@ import React, { useEffect } from 'react'
 
 const ProjectDetail = ({ project, onBack }) => {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    // Disable smooth scrolling
+    document.documentElement.style.scrollBehavior = 'auto'
+    // Use requestAnimationFrame to ensure style change takes effect
+    requestAnimationFrame(() => {
+      window.scrollTo(0, 0)
+      // Restore smooth scrolling after scroll completes
+      requestAnimationFrame(() => {
+        document.documentElement.style.scrollBehavior = ''
+      })
+    })
   }, [])
 
   const getProjectLink = (projectId) => {
