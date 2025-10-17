@@ -336,11 +336,11 @@ const ProjectDetail = ({ project, onBack }) => {
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center top'
+                      objectFit: 'contain',
+                      objectPosition: 'center'
                     }}
                   >
-                    <source src="/videos/Carousel.mp4" type="video/mp4" />
+                    <source src="/videos/Untitled video - Made with Clipchamp.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -369,11 +369,11 @@ const ProjectDetail = ({ project, onBack }) => {
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center top'
+                      objectFit: 'contain',
+                      objectPosition: 'center'
                     }}
                   >
-                    <source src="/videos/Deep Research (1).mp4" type="video/mp4" />
+                    <source src="/videos/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
