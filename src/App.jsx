@@ -48,6 +48,10 @@ function App() {
     document.title = 'Chris Jackson'
     // Go back in browser history
     window.history.back()
+    // Scroll to top after navigation completes
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 0)
   }
 
   if (selectedProject) {
