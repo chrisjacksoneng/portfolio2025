@@ -307,6 +307,79 @@ const ProjectDetail = ({ project, onBack }) => {
             </div>
 
             <div className="role-subsection">
+              <h5>AI Carousel Interface</h5>
+              <p>I built a carousel interface to help users navigate through different AI prompt options. This made it easy for users to explore various research queries and see what the AI could help them with, without having to type everything out manually. When a user clicks on any analysis module, it opens a chatbot page with a pre-filled prompt based on what was clicked, immediately starting a conversation with the AI.</p>
+
+              <p>This was one of the more complex features to implement. I built a custom React carousel from scratch using useState for state management and Tailwind CSS for styling. The coverflow effect required careful manipulation of CSS transform properties, z-index layering for proper depth perception, and optimized transition timing functions to ensure smooth animations.</p>
+
+              <p>I implemented a card positioning algorithm that calculated dynamic offsets based on the current index, handling edge cases for the first and last cards. The navigation logic involved debouncing to prevent rapid state changes and ensuring proper boundary conditions. I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders.</p>
+
+              <p>I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</p>
+
+              <p>The video below is an MVP demo I created to showcase the design. Due to the NDA, I couldn't show the actual prompts we used, which is why you see generic names like "Analysis Module A, Analysis Module B" instead of the real content.</p>
+              <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
+                <div style={{
+                  width: '100%',
+                  maxWidth: '750px',
+                  height: '360px',
+                  overflow: 'hidden',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  boxShadow: '0 0 20px rgba(255, 255, 255, 0.15), 0 0 40px rgba(255, 255, 255, 0.08), 0 0 60px rgba(255, 255, 255, 0.05)',
+                  filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.15))'
+                }}>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center top'
+                    }}
+                  >
+                    <source src="/videos/Carousel.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Deep Research Model</h5>
+              <p>I also worked on implementing the deep research feature, which allowed users to get comprehensive, in-depth analysis on specific topics. The model would pull from multiple sources and provide detailed insights that went beyond surface-level information.</p>
+              <p>The video below is an MVP demo I created to showcase the design. Due to the NDA, I couldn't show the actual prompts we used, which is why you see generic names like "Analysis Module A, Analysis Module B" instead of the real content.</p>
+              <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
+                <div style={{
+                  width: '100%',
+                  maxWidth: '750px',
+                  height: '360px',
+                  overflow: 'hidden',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  boxShadow: '0 0 20px rgba(255, 255, 255, 0.15), 0 0 40px rgba(255, 255, 255, 0.08), 0 0 60px rgba(255, 255, 255, 0.05)',
+                  filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.15))'
+                }}>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center top'
+                    }}
+                  >
+                    <source src="/videos/Deep Research (1).mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="role-subsection">
               <h5>AI Features</h5>
               <p>We integrated AI to provide personalized investment insights and recommendations. This involved working with language models to analyze market trends and generate readable summaries for users. I helped design the prompts and structure the output so it felt natural and actually useful.</p>
             </div>
