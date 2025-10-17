@@ -764,6 +764,19 @@ body {
   box-shadow: none !important;
 }
 
+/* Make Aeon image larger on mobile */
+@media (max-width: 768px) {
+  .project-detail-image-container.aeon-detail {
+    max-width: 80vw !important;
+    width: 80vw !important;
+    transform: translateY(-30px) !important;
+  }
+
+  .aeon-image {
+    transform: scale(1.05) !important;
+  }
+}
+
 /* WAT.ai (id 1) detail: preserve true image shape and transparency */
 .wat-detail {
   background: transparent;

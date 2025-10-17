@@ -316,7 +316,7 @@ const ProjectDetail = ({ project, onBack }) => {
                 <li><strong>Performance Optimization:</strong> I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders. I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</li>
               </ul>
 
-              <p>The video below is an MVP demo I created to showcase the design, following NDA guidelines.</p>
+              <p>Below is a demonstration of the interface design (NDA compliant).</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
@@ -340,7 +340,7 @@ const ProjectDetail = ({ project, onBack }) => {
                       objectPosition: 'center'
                     }}
                   >
-                    <source src="/videos/Untitled video - Made with Clipchamp.mp4" type="video/mp4" />
+                    <source src="/videos/SampleCarousel.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -349,7 +349,7 @@ const ProjectDetail = ({ project, onBack }) => {
             <div className="role-subsection">
               <h5>Deep Research Model</h5>
               <p>I also worked on implementing the <strong>deep research</strong> feature, which allowed users to get comprehensive, in-depth analysis on specific topics. The model would pull from multiple sources and provide detailed insights that went beyond surface-level information.</p>
-              <p>The video below is an MVP demo I created to showcase the design, following NDA guidelines.</p>
+              <p>Below is a demonstration of the interface design (NDA compliant).</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
@@ -373,7 +373,7 @@ const ProjectDetail = ({ project, onBack }) => {
                       objectPosition: 'center'
                     }}
                   >
-                    <source src="/videos/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4" />
+                    <source src="/videos/Deep Research.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
