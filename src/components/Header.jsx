@@ -25,7 +25,7 @@ const Header = () => {
               </a>
               <a href="#" className="social-link">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                  <path d="M14,2H6A2,2 0,0,0 4,4V20A2,2 0,0,0 6,22H18A2,2 0,0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M7,12H17V13.5H7V12M7,15H13V16.5H7V15Z" />
                 </svg>
               </a>
             </div>
@@ -51,7 +51,7 @@ const Header = () => {
             </a>
             <a href="#" className="social-link">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                <path d="M14,2H6A2,2 0,0,0 4,4V20A2,2 0,0,0 6,22H18A2,2 0,0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M7,12H17V13.5H7V12M7,15H13V16.5H7V15Z" />
               </svg>
             </a>
           </div>
