@@ -30,7 +30,7 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <p className="description"><em>Systems Design Engineering</em> student at the <em>University of Waterloo</em> with a passion for building innovative solutions that make a positive impact. Gaining experience in software development, fintech, AI, and product management.</p>
+          <p className="description"><em>Systems Design Engineering</em> student at the <em>University of Waterloo</em>. Building innovative solutions in software development, fintech, AI, and product management.</p>
         </div>
         <div className="navbar-right">
           <div className="social-links desktop-social">
