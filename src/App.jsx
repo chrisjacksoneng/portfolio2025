@@ -2,10 +2,33 @@ import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Projects from './components/Projects'
 import ProjectDetail from './components/ProjectDetail'
+import LoadingScreen from './components/LoadingScreen'
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null)
+  const [isLoading, setIsLoading] = useState(true)
 
+  // Handle loading animation
+  useEffect(() => {
+    const minLoadTime = 800 // Minimum loading time to prevent flash
+    
+    const timer1 = setTimeout(() => {
+      setIsLoading(false)
+    }, minLoadTime)
+    
+    // Wait for fonts to load
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        clearTimeout(timer1)
+        setTimeout(() => {
+          setIsLoading(false)
+        }, 200) // Small delay after fonts load
+      })
+    }
+    
+    return () => clearTimeout(timer1)
+  }, [])
+  
   // Disable browser scroll restoration
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
@@ -57,6 +80,11 @@ function App() {
     window.scrollTo(0, 0)
     // Go back in browser history
     window.history.back()
+  }
+
+  // Show loading screen while page is loading
+  if (isLoading) {
+    return <LoadingScreen />
   }
 
   if (selectedProject) {
