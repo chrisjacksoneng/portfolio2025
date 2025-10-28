@@ -49,7 +49,7 @@ const Projects = ({ onProjectClick }) => {
       year: "2025",
       timeline: "Jan. 2025 - Apr. 2025",
       jobTitle: "Personal Project",
-      description: "My first full-stack web application—a comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
+      description: "A comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
       image: "./images/GradePadBg.png",
       tech: "HTML, CSS, JavaScript, PHP, MySQL"
     },
