@@ -156,7 +156,7 @@ const ProjectDetail = ({ project, onBack }) => {
                   </div>
                   <div className="contribution-text">
                     <strong>Feature Specifications</strong>
-                    <p>I wrote detailed <strong>feature specs</strong> and requirements to help guide the development team. This was my first real experience thinking through how features should work from a product perspective.</p>
+                    <p>I wrote detailed <strong>feature specs</strong> and requirements to help guide the development team through the product development process.</p>
                   </div>
                 </div>
                 <div className="contribution-item">
@@ -218,7 +218,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 5 && (
           <div className="about-this-role-section">
             <h4>About This Project</h4>
-            <p>Gradepad was my first big coding project, and it came from a real problem I was facing as a student. I was tired of juggling multiple tabs of grade calculators that didn't save my data, forcing me to re-enter everything each time. So I decided to build something better, a comprehensive grade tracking platform that actually solved the problems I was dealing with.</p>
+            <p>Gradepad came from a real problem I was facing as a student. I was tired of juggling multiple tabs of grade calculators that didn't save my data, forcing me to re-enter everything each time. So I decided to build something better, a comprehensive grade tracking platform that actually solved the problems I was dealing with.</p>
 
             <div className="role-subsection">
               <h5>The Problem</h5>
@@ -234,9 +234,9 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Technical Challenges</h5>
-              <p>This was my first time building something with a full tech stack including HTML, CSS, and JavaScript for the frontend, PHP for the server-side logic, and MySQL for the database. Learning how to connect all these pieces together was a huge learning curve.</p>
+              <p>I built this with a full tech stack including HTML, CSS, and JavaScript for the frontend, PHP for the server-side logic, and MySQL for the database. Connecting all these pieces together required careful architecture and planning.</p>
               <p>One of the trickier parts was getting the grade calculations right. I had to handle different grading schemes where some courses use points, others use percentages, and some use letter grades. Making sure the calculations were accurate and handling edge cases (like missing assignments or extra credit) took a lot of testing.</p>
-              <p>User authentication was also new territory for me. Learning about <strong>password hashing</strong>, <strong>session management</strong>, and secure login flows was really valuable, even if it was challenging at first.</p>
+              <p>User authentication involved implementing <strong>password hashing</strong>, <strong>session management</strong>, and secure login flows to protect user data and ensure security.</p>
             </div>
 
             <div className="role-subsection">
@@ -247,9 +247,9 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>What I Learned</h5>
-              <p>This project taught me a ton about the full development cycle from planning and requirements gathering to building, testing, and iterating. I wrote a comprehensive design document before I started coding, which helped me think through the requirements and avoid scope creep.</p>
-              <p>It was also my first real experience with version control, database design, and thinking about security. Building something from scratch gave me a much better understanding of how all the pieces of a web application fit together.</p>
-              <p>Most importantly, it showed me that I could identify a problem, design a solution, and actually build it. That confidence was huge for me as a developer.</p>
+              <p>This project involved the full development cycle from planning and requirements gathering to building, testing, and iterating. I wrote a comprehensive design document before starting development, which helped me think through the requirements and avoid scope creep.</p>
+              <p>Building something from scratch with version control, database design, and security considerations gave me a comprehensive understanding of how all the pieces of a web application fit together.</p>
+              <p>Most importantly, it demonstrated that I could identify a problem, design a solution, and deliver it effectively.</p>
             </div>
           </div>
         )}
@@ -403,7 +403,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 4 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. I worked closely with <a href="https://www.linkedin.com/in/jayden-ferrer/" target="_blank" rel="noopener noreferrer" className="team-member-link">Jayden Ferrer</a>, under <a href="https://www.linkedin.com/in/primiecegnar/" target="_blank" rel="noopener noreferrer" className="team-member-link">Primie Cegnar</a>, to build out the paywall system. This was my first real experience working with payment infrastructure and subscription logic, which was both challenging and really rewarding.</p>
+            <p>I spent the summer working at Aeon Stellar Commerce on StellaEats, Canada's first AI-powered food marketplace focused on dietary needs. I worked closely with <a href="https://www.linkedin.com/in/jayden-ferrer/" target="_blank" rel="noopener noreferrer" className="team-member-link">Jayden Ferrer</a>, under <a href="https://www.linkedin.com/in/primiecegnar/" target="_blank" rel="noopener noreferrer" className="team-member-link">Primie Cegnar</a>, to build out the paywall system. Working with payment infrastructure and subscription logic was both challenging and rewarding.</p>
 
             <div className="role-subsection">
               <h5>What I Built</h5>
@@ -484,7 +484,7 @@ const ProjectDetail = ({ project, onBack }) => {
             <div className="role-subsection">
               <h5>The Experience</h5>
               <p>Working at Aeon was a great introduction to the startup world. The team was small, which meant I had a lot of ownership and got to see how decisions were made quickly. Working directly with Primie gave me insight into product strategy and how technical decisions impact the business.</p>
-              <p>This was my first time working with payment infrastructure and subscription systems. Learning to work within platform constraints and dealing with complex integrations taught me a lot about flexibility and finding creative solutions.</p>
+              <p>Working with payment infrastructure and subscription systems required learning to work within platform constraints and dealing with complex integrations, which taught me valuable lessons about flexibility and finding creative solutions.</p>
               <p>I'm proud of what we accomplished. We contributed concrete deliverables including paywall designs, architectural planning, and user flow strategies that will support future implementation. This experience strengthened both my design and problem-solving skills, while giving me a deeper appreciation for the collaboration and persistence needed to bring new features to life.</p>
             </div>
           </div>
