@@ -390,8 +390,10 @@ body {
 }
 
 .project-title {
+  font-family: culture  Garamond", serif;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-style: italic;
   margin-bottom: 0.8rem;
   color: #ffffff;
 }
@@ -602,9 +604,9 @@ body {
 
 .project-detail-title {
   font-size: 2.6rem;
-  font-weight: 700;
+  font-weight: 400;
   font-style: italic;
-  font-family: "Lora", "Cormorant Garamond", "Times New Roman", serif;
+  font-family: "Cormorant Garamond", serif;
   margin: 0 0 0.25rem 0;
   background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
   -webkit-background-clip: text;
