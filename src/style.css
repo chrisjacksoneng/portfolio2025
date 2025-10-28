@@ -390,11 +390,9 @@ body {
 }
 
 .project-title {
-  font-family: culture  Garamond", serif;
   font-size: 1.4rem;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
   color: #ffffff;
 }
 
