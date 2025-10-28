@@ -69,16 +69,15 @@ body {
 }
 
 .name {
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-style: italic;
-  font-family: "Lora", "Cormorant Garamond", "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Dynalight", cursive;
   margin: 0;
   background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   letter-spacing: 0.3px;
   position: relative;
   line-height: 1.2;
@@ -95,9 +94,7 @@ body {
 }
 
 .description {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #ffffff;
   margin: 0.5rem 0 0 0;
   font-weight: 400;
@@ -115,7 +112,7 @@ body {
   margin-top: 1rem;
   color: #ffffff;
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: right;
   line-height: 1.4;
 }
@@ -140,7 +137,7 @@ body {
 .resume-text {
   font-size: 0.8rem;
   color: #007bff;
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
   font-family: cursive;
 }
@@ -346,7 +343,7 @@ body {
 .project-meta h4 {
   font-size: 0.95rem;
   color: #bdbdbd;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.35rem;
 }
 
@@ -394,7 +391,7 @@ body {
 
 .project-title {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.8rem;
   color: #ffffff;
 }
@@ -475,10 +472,10 @@ body {
   }
 
   .name {
-    font-size: 1.6rem;
-    font-family: "Lora", "Cormorant Garamond", "Times New Roman", serif;
-    font-weight: 700;
-    font-style: italic;
+    font-size: 1.8rem;
+    font-family: "Dynalight", cursive;
+    font-weight: 400;
+    font-style: normal;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -520,10 +517,10 @@ body {
   }
 
   .name {
-    font-size: 1.4rem;
-    font-family: "Lora", "Cormorant Garamond", "Times New Roman", serif;
-    font-weight: 700;
-    font-style: italic;
+    font-size: 1.6rem;
+    font-family: "Dynalight", cursive;
+    font-weight: 400;
+    font-style: normal;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #b0b0b0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -678,7 +675,7 @@ body {
 .detail-meta h4 {
   font-size: 0.95rem;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.35rem;
   text-align: left;
 }
@@ -708,7 +705,7 @@ body {
 
 .detail-meta-right h4 {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.35rem;
   text-align: left;
 }
@@ -858,7 +855,7 @@ body {
 .about-this-role-section h4 {
   font-size: 0.95rem;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.35rem;
   text-align: left;
 }
@@ -895,7 +892,7 @@ body {
 .role-subsection h5 {
   font-size: 1rem;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -932,7 +929,7 @@ body {
 
 .contribution-text strong {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   display: inline;
   margin-bottom: 0.5rem;
