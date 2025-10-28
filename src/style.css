@@ -738,6 +738,11 @@ body {
   margin-top: 5rem;
 }
 
+/* Gradepad project (id 5): lower the meta section */
+.project-detail-content:has(.project-glow-5) .detail-meta {
+  margin-top: 3rem;
+}
+
 /* Aeon (id 4) detail: preserve true image shape and transparency */
 .aeon-detail {
   background: transparent;
