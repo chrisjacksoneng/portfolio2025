@@ -47,7 +47,7 @@ const Projects = ({ onProjectClick }) => {
       id: 5,
       title: "Gradepad",
       year: "2025",
-      timeline: "Jan. 2025 - Apr. 2025",
+      timeline: "Oct. 2025 - Apr. 2025",
       jobTitle: "Personal Project",
       description: "A comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
       image: "./images/GPbg.png",

@@ -204,8 +204,8 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Design & UX</h5>
-              <p>Creating wireframes and mockups was one of my favorite parts. I used <strong>Figma</strong> to design interfaces and think through <strong>user flows</strong>. There's something satisfying about seeing an idea go from a rough sketch to a polished mockup.</p>
-              <p>I learned to pay attention to details that I hadn't really thought about before, like spacing, typography, color choices, and how different states look (loading, error, success). These small details make a huge difference in how users experience the product.</p>
+              <p>Creating wireframes and mockups was one of my favourite parts. I used <strong>Figma</strong> to design interfaces and think through <strong>user flows</strong>. There's something satisfying about seeing an idea go from a rough sketch to a polished mockup.</p>
+              <p>I learned to pay attention to details that I hadn't really thought about before, like spacing, typography, colour choices, and how different states look (loading, error, success). These small details make a huge difference in how users experience the product.</p>
             </div>
 
             <div className="role-subsection">
@@ -306,7 +306,7 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Design & UX</h5>
-              <p>I focused on clarity and speed: clean typography, smart spacing, and color-coded signals for performance. Tables are intentionally minimal and interactive—drag-and-drop, quick add/remove, collapse/expand—so managing a course feels fast and frictionless. The dashboard gives an immediate sense of semester progress without digging.</p>
+              <p>I focused on clarity and speed: clean typography, smart spacing, and colour-coded signals for performance. Tables are intentionally minimal and interactive—drag-and-drop, quick add/remove, collapse/expand—so managing a course feels fast and frictionless. The dashboard gives an immediate sense of semester progress without digging.</p>
             </div>
 
             {/* Checklist cards */}
@@ -316,7 +316,6 @@ const ProjectDetail = ({ project, onBack }) => {
                 'GPA dashboard + summaries',
                 'AI Syllabus Parser',
                 'Drag-and-drop rows',
-                'Current / max / what‑if grades',
                 'Installable PWA'
               ].map(i => (
                 <div className="check" key={i}><span>✓</span>{i}</div>
