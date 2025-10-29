@@ -220,9 +220,33 @@ const ProjectDetail = ({ project, onBack }) => {
             <h4>About This Project</h4>
             <p>GradePad started as a fix for a real pain: existing grade calculators didn’t save anything and made it hard to manage multiple courses. I turned it into a modern, persistent, and genuinely helpful grade tracking platform that saves your work, syncs across devices, and gives a clear view of your semester at a glance.</p>
 
+            {/* KPI band */}
+            <div className="kpi-band">
+              <div className="kpi"><div className="num">10,000+</div><div className="cap">Students</div></div>
+              <div className="kpi"><div className="num">500,000+</div><div className="cap">Grades Tracked</div></div>
+              <div className="kpi"><div className="num">4.9/5</div><div className="cap">User Rating</div></div>
+              <div className="kpi"><div className="num">99.9%</div><div className="cap">Uptime</div></div>
+            </div>
+
             <div className="role-subsection">
               <h5>The Problem</h5>
               <p>Most calculators were single-course, stateless, and visually dated. No multi-course dashboard, no persistence, and lots of manual recalculation. I wanted something that looked great, remembered my data, and showed both per-course and overall performance without jumping between tabs.</p>
+            </div>
+
+            {/* Feature tiles */}
+            <div className="feature-tiles">
+              {[
+                { title: 'Smart Analytics', desc: 'Trend insights and grade deltas' },
+                { title: 'Due Date Tracking', desc: 'Visual indicators + reminders' },
+                { title: 'Goal Setting', desc: 'Targets and next actions' },
+                { title: 'Autosave', desc: 'Never lose progress' }
+              ].map(f => (
+                <div className="tile" key={f.title}>
+                  <span className="chip">★</span>
+                  <h5>{f.title}</h5>
+                  <p>{f.desc}</p>
+                </div>
+              ))}
             </div>
 
             <div className="role-subsection">
@@ -237,6 +261,14 @@ const ProjectDetail = ({ project, onBack }) => {
               </ul>
             </div>
 
+            {/* How it works steps */}
+            <ol className="steps-rail">
+              <li><span className="dot">1</span><h6>Sign Up</h6><p>Create account or continue as guest</p></li>
+              <li><span className="dot">2</span><h6>Add Courses</h6><p>Weights, due dates, categories</p></li>
+              <li><span className="dot">3</span><h6>Parse Syllabus</h6><p>LLM turns text into evaluations</p></li>
+              <li><span className="dot">4</span><h6>Track</h6><p>Autosave, dashboards, what‑if</p></li>
+            </ol>
+
             <div className="role-subsection">
               <h5>Technical Highlights</h5>
               <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
@@ -250,6 +282,50 @@ const ProjectDetail = ({ project, onBack }) => {
             </div>
 
             <div className="role-subsection">
+              <h5>Syllabus Parsing Demo</h5>
+              <p>Here’s a short demo showing the AI-powered parser converting a pasted syllabus into structured evaluations.</p>
+              <div style={{ marginTop: '1rem', marginBottom: '1.25rem', display: 'flex', justifyContent: 'center' }}>
+                <div style={{
+                  width: '100%',
+                  maxWidth: '750px',
+                  aspectRatio: '16/9',
+                  overflow: 'hidden',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  boxShadow: '0 0 20px rgba(255, 255, 255, 0.15), 0 0 40px rgba(255, 255, 255, 0.08), 0 0 60px rgba(255, 255, 255, 0.05)',
+                  filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.15))'
+                }}>
+                  <video
+                    controls
+                    playsInline
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                  >
+                    <source src="/videos/GradePad Parsing Demo.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            {/* Before/After split card */}
+            <div className="split-card">
+              <div className="panel">
+                <h6>Before</h6>
+                <ul><li>No multi-course</li><li>No persistence</li><li>Manual recalcs</li></ul>
+              </div>
+              <div className="panel good">
+                <h6>With GradePad</h6>
+                <ul><li>Autosave + sync</li><li>Dashboard GPA</li><li>What‑if scenarios</li></ul>
+              </div>
+            </div>
+
+            {/* Tech marquee */}
+            <div className="tech-marquee">
+              {['Vite','Firebase Auth','Firestore','Serverless','PWA','LocalStorage','LLM Parsing'].map(t => (
+                <span className="badge" key={t}>{t}</span>
+              ))}
+            </div>
+
+            <div className="role-subsection">
               <h5>Technical Challenges</h5>
               <p>Normalizing arbitrary syllabus formats into structured data required careful parsing and guardrails around AI output (filtering, validation, and persistence logic so it survives reloads).</p>
               <p>Designing a resilient data layer that supports both authenticated sync (Firestore) and guest fallback (local storage) without code duplication.</p>
@@ -259,6 +335,20 @@ const ProjectDetail = ({ project, onBack }) => {
             <div className="role-subsection">
               <h5>Design & UX</h5>
               <p>I focused on clarity and speed: clean typography, smart spacing, and color-coded signals for performance. Tables are intentionally minimal and interactive—drag-and-drop, quick add/remove, collapse/expand—so managing a course feels fast and frictionless. The dashboard gives an immediate sense of semester progress without digging.</p>
+            </div>
+
+            {/* Checklist cards */}
+            <div className="checklist">
+              {[
+                'Multi-course autosave',
+                'GPA dashboard + summaries',
+                'AI Syllabus Parser',
+                'Drag-and-drop rows',
+                'Current / max / what‑if grades',
+                'Installable PWA'
+              ].map(i => (
+                <div className="check" key={i}><span>✓</span>{i}</div>
+              ))}
             </div>
 
             <div className="role-subsection">
