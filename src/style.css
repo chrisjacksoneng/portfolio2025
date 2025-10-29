@@ -1001,7 +1001,7 @@ body {
   color: #dcdcdc;
   font-size: 0.9rem;
 }
-.checklist .check span { color: #7ad47a; }
+.checklist .check span { color: #ffffff; }
 
 @media (max-width: 900px) {
   .split-card { grid-template-columns: 1fr; }
