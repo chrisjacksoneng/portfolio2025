@@ -51,7 +51,7 @@ const Projects = ({ onProjectClick }) => {
       jobTitle: "Personal Project",
       description: "A comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
       image: "./images/GPbg.png",
-      tech: "HTML, CSS, JavaScript, PHP, MySQL"
+      tech: "HTML, CSS, JavaScript, Firebase, Firestore, AI Parsing"
     },
     {
       id: 6,

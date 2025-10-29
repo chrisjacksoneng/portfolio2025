@@ -218,38 +218,56 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 5 && (
           <div className="about-this-role-section">
             <h4>About This Project</h4>
-            <p>Gradepad came from a real problem I was facing as a student. I was tired of juggling multiple tabs of grade calculators that didn't save my data, forcing me to re-enter everything each time. So I decided to build something better, a comprehensive grade tracking platform that actually solved the problems I was dealing with.</p>
+            <p>GradePad started as a fix for a real pain: existing grade calculators didn’t save anything and made it hard to manage multiple courses. I turned it into a modern, persistent, and genuinely helpful grade tracking platform that saves your work, syncs across devices, and gives a clear view of your semester at a glance.</p>
 
             <div className="role-subsection">
               <h5>The Problem</h5>
-              <p>Most existing grade calculators either looked outdated or didn't store user data, meaning you had to start from scratch every time you opened them. They also couldn't handle multiple courses at once, and none of them showed an overall semester average. I was constantly switching between tabs and doing manual calculations, which was frustrating and error-prone.</p>
-              <p>I wanted to build something that looked good, saved my work, and gave me a complete picture of how I was doing across all my classes.</p>
+              <p>Most calculators were single-course, stateless, and visually dated. No multi-course dashboard, no persistence, and lots of manual recalculation. I wanted something that looked great, remembered my data, and showed both per-course and overall performance without jumping between tabs.</p>
             </div>
 
             <div className="role-subsection">
               <h5>What I Built</h5>
-              <p>I built a <strong>full-stack web application</strong> with <strong>user authentication</strong>, so students could create accounts and save their data. The core feature was the grade calculator, which let you add assignments with titles, due dates, grades, and weights. The system automatically calculated your current grade, highest possible grade, and lowest possible grade for each course.</p>
-              <p>I also built a dashboard that showed all your courses at a glance, so you could see your semester-wide performance without switching between different pages. This was one of the most useful features because it let you see everything in one place.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>Persistent multi-course grade tracking with autosave</li>
+                <li>Semester dashboard with GPA and per-course summaries</li>
+                <li>AI-powered Syllabus Parser that converts pasted syllabi into graded evaluations</li>
+                <li>Drag-and-drop row reordering, quick add/remove rows, and collapsible tables</li>
+                <li>Current, highest-possible, and “what-if” grade calculations</li>
+                <li>Theming and clean, responsive UI with installable PWA support</li>
+              </ul>
+            </div>
+
+            <div className="role-subsection">
+              <h5>Technical Highlights</h5>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>Authentication and sync with Firebase Auth + Firestore; guests use local storage seamlessly</li>
+                <li>Immediate persistence pipeline: user inputs and parsed rows are saved in real time (no lost data on refresh)</li>
+                <li>Serverless AI integration: a Netlify function calls an LLM to parse unstructured syllabi into structured assignments with names, weights, and due dates</li>
+                <li>Robust table model: indexing for evaluations, safe rehydration on load, and idempotent updates</li>
+                <li>PWA: service worker caching for fast loads and offline availability; installable on desktop/mobile</li>
+                <li>UI/UX details: input auto-sizing, color-coded performance states, keyboard-friendly interactions, and consistent autosave triggers</li>
+              </ul>
             </div>
 
             <div className="role-subsection">
               <h5>Technical Challenges</h5>
-              <p>I built this with a full tech stack including HTML, CSS, and JavaScript for the frontend, PHP for the server-side logic, and MySQL for the database. Connecting all these pieces together required careful architecture and planning.</p>
-              <p>One of the trickier parts was getting the grade calculations right. I had to handle different grading schemes where some courses use points, others use percentages, and some use letter grades. Making sure the calculations were accurate and handling edge cases (like missing assignments or extra credit) took a lot of testing.</p>
-              <p>User authentication involved implementing <strong>password hashing</strong>, <strong>session management</strong>, and secure login flows to protect user data and ensure security.</p>
+              <p>Normalizing arbitrary syllabus formats into structured data required careful parsing and guardrails around AI output (filtering, validation, and persistence logic so it survives reloads).</p>
+              <p>Designing a resilient data layer that supports both authenticated sync (Firestore) and guest fallback (local storage) without code duplication.</p>
+              <p>Ensuring grade calculations handled edge cases (missing inputs, zero weights, partial data) while keeping the UI responsive and accurate.</p>
             </div>
 
             <div className="role-subsection">
               <h5>Design & UX</h5>
-              <p>I wanted the interface to look clean and modern, which meant spending a lot of time on CSS and making sure everything was responsive. I used a monospaced font for the grade tables so all the numbers lined up nicely, which made it easier to scan your data.</p>
-              <p>I also thought about features that would make the app more useful, like color-coding assignments based on due dates (overdue in red, due soon in yellow, etc.) and a potential grade calculator where you could see "if I get X on my final, what will my grade be?"</p>
+              <p>I focused on clarity and speed: clean typography, smart spacing, and color-coded signals for performance. Tables are intentionally minimal and interactive—drag-and-drop, quick add/remove, collapse/expand—so managing a course feels fast and frictionless. The dashboard gives an immediate sense of semester progress without digging.</p>
             </div>
 
             <div className="role-subsection">
               <h5>What I Learned</h5>
-              <p>This project involved the full development cycle from planning and requirements gathering to building, testing, and iterating. I wrote a comprehensive design document before starting development, which helped me think through the requirements and avoid scope creep.</p>
-              <p>Building something from scratch with version control, database design, and security considerations gave me a comprehensive understanding of how all the pieces of a web application fit together.</p>
-              <p>Most importantly, it demonstrated that I could identify a problem, design a solution, and deliver it effectively.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>How to design a state and persistence layer that’s robust to refreshes, offline states, and partial data</li>
+                <li>Effective serverless patterns for AI-assisted features that add real value (not just novelty)</li>
+                <li>Product thinking: building the right defaults (autosave, multi-course, dashboard) solves the user’s core frustrations and keeps the experience delightful</li>
+              </ul>
             </div>
           </div>
         )}
