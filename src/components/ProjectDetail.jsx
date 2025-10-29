@@ -20,7 +20,8 @@ const ProjectDetail = ({ project, onBack }) => {
       3: 'https://encorefinancialgroup.ca/', // Encore
       4: 'https://aeonstellar.co/', // Aeon
       2: 'https://qquote.com/', // QQuote
-      6: 'https://qquote.com/' // QQuote Special
+      6: 'https://qquote.com/', // QQuote Special
+      5: 'https://gradepad.netlify.app/' // GradePad
     }
     return links[projectId] || '#'
   }
@@ -233,21 +234,7 @@ const ProjectDetail = ({ project, onBack }) => {
               <p>Most calculators were single-course, stateless, and visually dated. No multi-course dashboard, no persistence, and lots of manual recalculation. I wanted something that looked great, remembered my data, and showed both per-course and overall performance without jumping between tabs.</p>
             </div>
 
-            {/* Feature tiles */}
-            <div className="feature-tiles">
-              {[
-                { title: 'Smart Analytics', desc: 'Trend insights and grade deltas' },
-                { title: 'Due Date Tracking', desc: 'Visual indicators + reminders' },
-                { title: 'Goal Setting', desc: 'Targets and next actions' },
-                { title: 'Autosave', desc: 'Never lose progress' }
-              ].map(f => (
-                <div className="tile" key={f.title}>
-                  <span className="chip">★</span>
-                  <h5>{f.title}</h5>
-                  <p>{f.desc}</p>
-                </div>
-              ))}
-            </div>
+
 
             <div className="role-subsection">
               <h5>What I Built</h5>
@@ -256,7 +243,6 @@ const ProjectDetail = ({ project, onBack }) => {
                 <li>Semester dashboard with GPA and per-course summaries</li>
                 <li>AI-powered Syllabus Parser that converts pasted syllabi into graded evaluations</li>
                 <li>Drag-and-drop row reordering, quick add/remove rows, and collapsible tables</li>
-                <li>Current, highest-possible, and “what-if” grade calculations</li>
                 <li>Theming and clean, responsive UI with installable PWA support</li>
               </ul>
             </div>
@@ -266,7 +252,7 @@ const ProjectDetail = ({ project, onBack }) => {
               <li><span className="dot">1</span><h6>Sign Up</h6><p>Create account or continue as guest</p></li>
               <li><span className="dot">2</span><h6>Add Courses</h6><p>Weights, due dates, categories</p></li>
               <li><span className="dot">3</span><h6>Parse Syllabus</h6><p>LLM turns text into evaluations</p></li>
-              <li><span className="dot">4</span><h6>Track</h6><p>Autosave, dashboards, what‑if</p></li>
+              <li><span className="dot">4</span><h6>Track</h6><p>Autosave, dashboards, insights</p></li>
             </ol>
 
             <div className="role-subsection">
@@ -277,7 +263,7 @@ const ProjectDetail = ({ project, onBack }) => {
                 <li>Serverless AI integration: a Netlify function calls an LLM to parse unstructured syllabi into structured assignments with names, weights, and due dates</li>
                 <li>Robust table model: indexing for evaluations, safe rehydration on load, and idempotent updates</li>
                 <li>PWA: service worker caching for fast loads and offline availability; installable on desktop/mobile</li>
-                <li>UI/UX details: input auto-sizing, color-coded performance states, keyboard-friendly interactions, and consistent autosave triggers</li>
+                <li>UI/UX details: input auto-sizing, colour-coded performance states, keyboard-friendly interactions, and consistent autosave triggers</li>
               </ul>
             </div>
 
@@ -298,7 +284,8 @@ const ProjectDetail = ({ project, onBack }) => {
                   <video
                     controls
                     playsInline
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                    muted
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 60%' }}
                   >
                     <source src="/videos/GradePad Parsing Demo.mp4" type="video/mp4" />
                   </video>
@@ -306,24 +293,9 @@ const ProjectDetail = ({ project, onBack }) => {
               </div>
             </div>
 
-            {/* Before/After split card */}
-            <div className="split-card">
-              <div className="panel">
-                <h6>Before</h6>
-                <ul><li>No multi-course</li><li>No persistence</li><li>Manual recalcs</li></ul>
-              </div>
-              <div className="panel good">
-                <h6>With GradePad</h6>
-                <ul><li>Autosave + sync</li><li>Dashboard GPA</li><li>What‑if scenarios</li></ul>
-              </div>
-            </div>
 
-            {/* Tech marquee */}
-            <div className="tech-marquee">
-              {['Vite','Firebase Auth','Firestore','Serverless','PWA','LocalStorage','LLM Parsing'].map(t => (
-                <span className="badge" key={t}>{t}</span>
-              ))}
-            </div>
+
+
 
             <div className="role-subsection">
               <h5>Technical Challenges</h5>
