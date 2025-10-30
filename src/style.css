@@ -230,31 +230,31 @@ body {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
-/* Custom glow colors for each project */
-.project-card:nth-child(1) .project-image:hover {
-  box-shadow: 0 0 30px rgba(255, 206, 26, 0.6); /* FFCE1A for WAT.ai */
+/* Custom glow colors for each project (id-based for stability) */
+.project-1 .project-image:hover { /* WAT.ai */
+  box-shadow: 0 0 30px rgba(255, 206, 26, 0.6);
 }
 
-.project-card:nth-child(2) .project-image:hover {
-  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote */
+.project-2 .project-image:hover { /* QQuote */
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
-.project-card:nth-child(3) .project-image:hover {
-  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6); /* F96210 for Encore */
+.project-3 .project-image:hover { /* Encore */
+  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6);
 }
 
-.project-card:nth-child(4) .project-image:hover {
+.project-4 .project-image:hover { /* Aeon */
   box-shadow: 0 0 50px 8px rgba(66, 37, 116, 0.8),
-    0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4); /* Multi-layered dramatic 422574 glow */
+    0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4);
 }
 
-.project-card:nth-child(5) .project-image:hover {
-  box-shadow: 0 0 40px 8px rgba(104, 81, 255, 0.85),
-    0 0 25px rgba(104, 81, 255, 0.7); /* #6851FF for GradePad */
+.project-5 .project-image:hover { /* GradePad */
+  box-shadow: 0 0 28px 6px rgba(104, 81, 255, 0.6),
+    0 0 16px rgba(104, 81, 255, 0.45);
 }
 
-.project-card:nth-child(6) .project-image:hover {
-  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote Special */
+.project-6 .project-image:hover { /* QQuote Special */
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
 .project-card:hover .project-title {
@@ -267,30 +267,30 @@ body {
   cursor: pointer;
 }
 
-.project-card:nth-child(1):has(.project-title:hover) .project-image {
-  box-shadow: 0 0 30px rgba(255, 206, 26, 0.6); /* FFCE1A for WAT.ai */
+.project-1:has(.project-title:hover) .project-image { /* WAT.ai */
+  box-shadow: 0 0 30px rgba(255, 206, 26, 0.6);
 }
 
-.project-card:nth-child(2):has(.project-title:hover) .project-image {
-  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote */
+.project-2:has(.project-title:hover) .project-image { /* QQuote */
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
-.project-card:nth-child(3):has(.project-title:hover) .project-image {
-  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6); /* F96210 for Encore */
+.project-3:has(.project-title:hover) .project-image { /* Encore */
+  box-shadow: 0 0 30px rgba(249, 98, 16, 0.6);
 }
 
-.project-card:nth-child(4):has(.project-title:hover) .project-image {
+.project-4:has(.project-title:hover) .project-image { /* Aeon */
   box-shadow: 0 0 50px 8px rgba(66, 37, 116, 0.8),
-    0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4); /* Multi-layered dramatic 422574 glow for Aeon */
+    0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4);
 }
 
-.project-card:nth-child(5):has(.project-title:hover) .project-image {
-  box-shadow: 0 0 40px 8px rgba(104, 81, 255, 0.85),
-    0 0 25px rgba(104, 81, 255, 0.7); /* #6851FF for GradePad */
+.project-5:has(.project-title:hover) .project-image { /* GradePad */
+  box-shadow: 0 0 28px 6px rgba(104, 81, 255, 0.6),
+    0 0 16px rgba(104, 81, 255, 0.45);
 }
 
-.project-card:nth-child(6):has(.project-title:hover) .project-image {
-  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6); /* DA6C35 for QQuote Special */
+.project-6:has(.project-title:hover) .project-image { /* QQuote Special */
+  box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
 .project-image img {
@@ -306,23 +306,23 @@ body {
 }
 
 /* Specific upscale for Aeon card image */
-.project-card:nth-child(4) .project-image img {
+.project-4 .project-image img {
   transform: translateX(-10px) scale(1.4);
   transform-origin: center;
 }
 
 /* Lower WAT.ai image inside its frame */
-.project-card:nth-child(1) .project-image img {
+.project-1 .project-image img {
   transform: translateY(40px) scale(1.3);
 }
 
 /* Fix WAT.ai image on mobile to remove white box */
 @media (max-width: 768px) {
-  .project-card:nth-child(1) .project-image {
+  .project-1 .project-image {
     overflow: hidden;
   }
 
-  .project-card:nth-child(1) .project-image img {
+  .project-1 .project-image img {
     transform: translateY(20px) scale(1.3);
   }
 }

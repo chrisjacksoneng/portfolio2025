@@ -6,7 +6,7 @@ const ProjectCard = ({ project, onProjectClick }) => {
   }
 
   return (
-    <div className="project-card">
+    <div className={`project-card project-${project.id}`}>
       <div className="project-image" onClick={handleImageClick}>
         <img src={project.image} alt={project.title} />
       </div>
