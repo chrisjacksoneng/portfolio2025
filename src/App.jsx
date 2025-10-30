@@ -18,11 +18,34 @@ function App() {
     
     // Wait for fonts to load
     if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(() => {
+      const waitForFirstRowImages = async () => {
+        const imageUrls = [
+          './images/WATaiBg (1).png',
+          './images/QQuoteBg.png'
+        ]
+        const decodeOne = (src) => new Promise((resolve) => {
+          const img = new Image()
+          const done = () => resolve(true)
+          img.onload = done
+          img.onerror = done
+          if (img.decode) {
+            img.decode().then(done).catch(done)
+          }
+          img.src = src
+        })
+        const timeout = new Promise((resolve) => setTimeout(resolve, 1800))
+        await Promise.race([
+          Promise.allSettled(imageUrls.map(decodeOne)),
+          timeout
+        ])
+      }
+
+      document.fonts.ready.then(async () => {
+        await waitForFirstRowImages()
         clearTimeout(timer1)
         setTimeout(() => {
           setIsLoading(false)
-        }, 200) // Small delay after fonts load
+        }, 100)
       })
     }
     
