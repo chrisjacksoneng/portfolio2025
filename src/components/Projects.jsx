@@ -1,8 +1,7 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 
-const Projects = ({ onProjectClick }) => {
-  const projects = [
+export const projectsData = [
     {
       id: 1,
       title: "WAT.ai",
@@ -63,12 +62,13 @@ const Projects = ({ onProjectClick }) => {
       image: "./images/QQuoteBg.png",
       tech: "Figma, Product Management, Analytics"
     }
-  ]
+]
 
+const Projects = ({ onProjectClick }) => {
   return (
     <section className="projects">
       <div className="projects-grid">
-        {projects.map(project => (
+        {projectsData.map(project => (
           <ProjectCard key={project.id} project={project} onProjectClick={onProjectClick} />
         ))}
       </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
-import Projects from './components/Projects'
+import Projects, { projectsData } from './components/Projects'
 import ProjectDetail from './components/ProjectDetail'
 import LoadingScreen from './components/LoadingScreen'
 
@@ -56,6 +56,22 @@ function App() {
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual'
+    }
+  }, [])
+
+  // On first load, if URL is a deep link, open the matching project
+  useEffect(() => {
+    const path = window.location.pathname.replace(/^\/+/, '')
+    if (!path) return
+    const customSlugs = { 3: 'encore-financial', 4: 'aeon' }
+    const slugify = (title) => title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+    const match = projectsData.find(p => {
+      const expected = customSlugs[p.id] || slugify(p.title)
+      return expected === path
+    })
+    if (match) {
+      setSelectedProject(match)
+      document.title = `Chris Jackson | ${match.title}`
     }
   }, [])
 
