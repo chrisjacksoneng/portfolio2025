@@ -13,6 +13,16 @@ export const projectsData = [
       tech: "Python, Computer Vision, YOLO, OpenCV, LLMs, Whisper, Flask, TensorFlow, PyTorch"
     },
     {
+      id: 5,
+      title: "Gradepad",
+      year: "2025",
+      timeline: "Jan. 2025 - Apr. 2025",
+      jobTitle: "Personal Project",
+      description: "A comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
+      image: "./images/GradePadbg (1).png",
+      tech: "HTML, CSS, JavaScript, Firebase, Firestore, AI Parsing"
+    },
+    {
       id: 2,
       title: "QQuote",
       year: "2025",
@@ -39,18 +49,8 @@ export const projectsData = [
       timeline: "Jun. 2025 - Aug. 2025",
       jobTitle: "Full Stack Developer",
       description: "Developed subscription paywall system for StellaEats, Canada's first dietary-first AI-powered food marketplace. Integrated Stripe payments with Firebase authentication and built access control logic.",
-      image: "./images/AeonBG (1).png",
+      image: "./images/AeonBGprojectPage.png",
       tech: "React.js, Stripe, Firebase, Figma, API Integration, Payment Systems, Subscription Management, UX Design"
-    },
-    {
-      id: 5,
-      title: "Gradepad",
-      year: "2025",
-      timeline: "Jan. 2025 - Apr. 2025",
-      jobTitle: "Personal Project",
-      description: "A comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
-      image: "./images/GradePadbg (1).png",
-      tech: "HTML, CSS, JavaScript, Firebase, Firestore, AI Parsing"
     },
     {
       id: 6,
