@@ -29,7 +29,7 @@ const ProjectDetail = ({ project, onBack }) => {
   const getImageTransform = (projectId) => {
     if (projectId === 1) return 'none' // WAT.ai: preserve true shape without scaling
     if (projectId === 4) return 'none' // Aeon: preserve true shape without scaling
-    if (projectId === 5) return 'scale(1.15)' // GradePad: zoom on project page (slightly smaller)
+    if (projectId === 5) return 'scale(1.05)' // GradePad: zoom on project page (slightly smaller)
     return 'scale(1.15)' // Default - matches home page scaling
   }
 

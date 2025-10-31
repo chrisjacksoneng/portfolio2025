@@ -1219,12 +1219,12 @@ body {
   aspect-ratio: auto;
   overflow: visible;
   box-shadow: none;
-  transform: translateY(-50px);
+  transform: translateY(-70px);
 }
 
 /* Pull GradePad detail meta (timeline, role, etc.) closer under image */
 .project-detail-content:has(.gradepad-detail) .detail-meta {
-  margin-top: -1.75rem;
+  margin-top: -3.95rem;
 }
 
 .gradepad-image {

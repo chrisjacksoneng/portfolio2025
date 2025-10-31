@@ -14,7 +14,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Gradepad",
+    title: "GradePad",
     year: "2025",
     timeline: "Jan. 2025 - Apr. 2025",
     jobTitle: "Personal Project",
