@@ -52,7 +52,7 @@ const ProjectDetail = ({ project, onBack }) => {
 
         <div className={`project-detail-image-container project-glow-${project.id} ${project.id === 4 ? 'aeon-detail' : ''} ${project.id === 1 ? 'wat-detail' : ''} ${project.id === 5 ? 'gradepad-detail' : ''}`}>
           <img
-            src={project.id === 4 ? './images/AeonBGprojectPage.png' : project.id === 5 ? './images/GradePadbgPP (2).png' : project.image}
+            src={project.id === 4 ? './images/AeonBGprojectPage.png' : project.id === 5 ? './images/GradePadbgPP (3).png' : project.image}
             alt={project.title}
             className={`project-detail-image ${project.id === 4 ? 'aeon-image' : ''} ${project.id === 1 ? 'wat-image' : ''} ${project.id === 5 ? 'gradepad-image' : ''}`}
             style={{

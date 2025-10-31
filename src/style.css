@@ -254,8 +254,8 @@ body {
 
 .project-5 .project-image:hover {
   /* GradePad */
-  box-shadow: 0 0 28px 6px rgba(11, 102, 146, 0.6),
-    0 0 16px rgba(11, 102, 146, 0.45);
+  box-shadow: 0 0 40px 10px rgba(11, 102, 146, 0.85),
+    0 0 28px 6px rgba(11, 102, 146, 0.6), 0 0 18px 3px rgba(11, 102, 146, 0.45);
 }
 
 .project-6 .project-image:hover {
@@ -296,8 +296,8 @@ body {
 
 .project-5:has(.project-title:hover) .project-image {
   /* GradePad */
-  box-shadow: 0 0 28px 6px rgba(11, 102, 146, 0.6),
-    0 0 16px rgba(11, 102, 146, 0.45);
+  box-shadow: 0 0 40px 10px rgba(11, 102, 146, 0.85),
+    0 0 28px 6px rgba(11, 102, 146, 0.6), 0 0 18px 3px rgba(11, 102, 146, 0.45);
 }
 
 .project-6:has(.project-title:hover) .project-image {
@@ -1219,7 +1219,7 @@ body {
   aspect-ratio: auto;
   overflow: visible;
   box-shadow: none;
-  transform: translateY(-60px);
+  transform: translateY(-50px);
 }
 
 /* Pull GradePad detail meta (timeline, role, etc.) closer under image */
