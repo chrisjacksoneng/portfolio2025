@@ -231,29 +231,35 @@ body {
 }
 
 /* Custom glow colors for each project (id-based for stability) */
-.project-1 .project-image:hover { /* WAT.ai */
+.project-1 .project-image:hover {
+  /* WAT.ai */
   box-shadow: 0 0 30px rgba(255, 206, 26, 0.6);
 }
 
-.project-2 .project-image:hover { /* QQuote */
+.project-2 .project-image:hover {
+  /* QQuote */
   box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
-.project-3 .project-image:hover { /* Encore */
+.project-3 .project-image:hover {
+  /* Encore */
   box-shadow: 0 0 30px rgba(249, 98, 16, 0.6);
 }
 
-.project-4 .project-image:hover { /* Aeon */
+.project-4 .project-image:hover {
+  /* Aeon */
   box-shadow: 0 0 50px 8px rgba(66, 37, 116, 0.8),
     0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4);
 }
 
-.project-5 .project-image:hover { /* GradePad */
-  box-shadow: 0 0 28px 6px rgba(104, 81, 255, 0.6),
-    0 0 16px rgba(104, 81, 255, 0.45);
+.project-5 .project-image:hover {
+  /* GradePad */
+  box-shadow: 0 0 28px 6px rgba(11, 102, 146, 0.6),
+    0 0 16px rgba(11, 102, 146, 0.45);
 }
 
-.project-6 .project-image:hover { /* QQuote Special */
+.project-6 .project-image:hover {
+  /* QQuote Special */
   box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
@@ -267,29 +273,35 @@ body {
   cursor: pointer;
 }
 
-.project-1:has(.project-title:hover) .project-image { /* WAT.ai */
+.project-1:has(.project-title:hover) .project-image {
+  /* WAT.ai */
   box-shadow: 0 0 30px rgba(255, 206, 26, 0.6);
 }
 
-.project-2:has(.project-title:hover) .project-image { /* QQuote */
+.project-2:has(.project-title:hover) .project-image {
+  /* QQuote */
   box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
-.project-3:has(.project-title:hover) .project-image { /* Encore */
+.project-3:has(.project-title:hover) .project-image {
+  /* Encore */
   box-shadow: 0 0 30px rgba(249, 98, 16, 0.6);
 }
 
-.project-4:has(.project-title:hover) .project-image { /* Aeon */
+.project-4:has(.project-title:hover) .project-image {
+  /* Aeon */
   box-shadow: 0 0 50px 8px rgba(66, 37, 116, 0.8),
     0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4);
 }
 
-.project-5:has(.project-title:hover) .project-image { /* GradePad */
-  box-shadow: 0 0 28px 6px rgba(104, 81, 255, 0.6),
-    0 0 16px rgba(104, 81, 255, 0.45);
+.project-5:has(.project-title:hover) .project-image {
+  /* GradePad */
+  box-shadow: 0 0 28px 6px rgba(11, 102, 146, 0.6),
+    0 0 16px rgba(11, 102, 146, 0.45);
 }
 
-.project-6:has(.project-title:hover) .project-image { /* QQuote Special */
+.project-6:has(.project-title:hover) .project-image {
+  /* QQuote Special */
   box-shadow: 0 0 30px rgba(218, 108, 53, 0.6);
 }
 
@@ -303,6 +315,12 @@ body {
     1.15
   ); /* compensate for transparent edges in source images */
   transition: none;
+}
+
+/* Enlarge GradePad (id 5) image within its frame */
+.project-5 .project-image img {
+  transform: none;
+  transform-origin: center;
 }
 
 /* Specific upscale for Aeon card image */
@@ -863,7 +881,11 @@ body {
   gap: 1rem;
 }
 .kpi {
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.015)
+  );
   border: 1px solid #272727;
   border-radius: 12px;
   padding: 1rem;
@@ -873,7 +895,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
   color: #ffffff;
-  text-shadow: 0 0 12px rgba(255,255,255,0.25);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 .kpi .cap {
   margin-top: 0.25rem;
@@ -890,15 +912,15 @@ body {
   margin: 1rem 0 1.25rem 0;
 }
 .feature-tiles .tile {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 1rem;
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 .feature-tiles .tile:hover {
-  background: rgba(255,255,255,0.04);
-  border-color: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
   transform: translateY(-2px);
 }
 .feature-tiles .chip {
@@ -908,12 +930,20 @@ body {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 0.5rem;
 }
-.feature-tiles h5 { color: #ffffff; margin: 0 0 0.25rem 0; font-size: 1rem; }
-.feature-tiles p { color: #bdbdbd; margin: 0; font-size: 0.9rem; }
+.feature-tiles h5 {
+  color: #ffffff;
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+.feature-tiles p {
+  color: #bdbdbd;
+  margin: 0;
+  font-size: 0.9rem;
+}
 
 .steps-rail {
   list-style: none;
@@ -924,8 +954,8 @@ body {
   gap: 0.75rem;
 }
 .steps-rail li {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
@@ -937,12 +967,20 @@ body {
   width: 34px;
   height: 34px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
   margin-bottom: 0.5rem;
 }
-.steps-rail h6 { color: #ffffff; margin: 0 0 0.25rem 0; font-size: 0.95rem; }
-.steps-rail p { color: #bdbdbd; margin: 0; font-size: 0.85rem; }
+.steps-rail h6 {
+  color: #ffffff;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+}
+.steps-rail p {
+  color: #bdbdbd;
+  margin: 0;
+  font-size: 0.85rem;
+}
 
 .split-card {
   margin: 1.25rem 0;
@@ -951,15 +989,32 @@ body {
   gap: 0.75rem;
 }
 .split-card .panel {
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.015)
+  );
   border: 1px solid #2a2a2a;
   border-radius: 12px;
   padding: 1rem;
 }
-.split-card .panel.good { border-color: rgba(7, 69, 106, 0.6); box-shadow: 0 0 20px rgba(7,69,106,0.25); }
-.split-card h6 { color: #ffffff; margin: 0 0 0.5rem 0; font-size: 0.95rem; }
-.split-card ul { margin: 0; padding-left: 1.1rem; }
-.split-card li { color: #bdbdbd; font-size: 0.9rem; }
+.split-card .panel.good {
+  border-color: rgba(7, 69, 106, 0.6);
+  box-shadow: 0 0 20px rgba(7, 69, 106, 0.25);
+}
+.split-card h6 {
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+}
+.split-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.split-card li {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+}
 
 .tech-marquee {
   display: flex;
@@ -969,7 +1024,9 @@ body {
   margin: 1rem 0 1.25rem 0;
   animation: marquee 24s linear infinite;
 }
-.tech-marquee:hover { animation-play-state: paused; }
+.tech-marquee:hover {
+  animation-play-state: paused;
+}
 .tech-marquee .badge {
   display: inline-block;
   padding: 0.35rem 0.7rem;
@@ -980,8 +1037,12 @@ body {
   font-size: 0.8rem;
 }
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .checklist {
@@ -995,16 +1056,20 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 10px;
   color: #dcdcdc;
   font-size: 0.9rem;
 }
-.checklist .check span { color: #ffffff; }
+.checklist .check span {
+  color: #ffffff;
+}
 
 @media (max-width: 900px) {
-  .split-card { grid-template-columns: 1fr; }
+  .split-card {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about-this-role-section {
@@ -1138,8 +1203,58 @@ body {
 }
 
 .project-detail-image-container.project-glow-5 {
-  box-shadow: 0 0 40px 8px rgba(104, 81, 255, 0.85),
-    0 0 25px rgba(104, 81, 255, 0.7); /* #6851FF for GradePad */
+  box-shadow: 0 0 40px 8px rgba(11, 102, 146, 0.85),
+    0 0 25px rgba(11, 102, 146, 0.7); /* #0B6692 for GradePad */
+}
+
+/* Make GradePad image container larger on project page */
+.project-detail-image-container.project-glow-5 {
+  max-width: 1100px;
+  width: min(60vw, 1100px);
+}
+
+/* GradePad (id 5) detail: preserve true image transparency and shape */
+.gradepad-detail {
+  background: transparent;
+  aspect-ratio: auto;
+  overflow: visible;
+  box-shadow: none;
+  transform: translateY(-60px);
+}
+
+/* Pull GradePad detail meta (timeline, role, etc.) closer under image */
+.project-detail-content:has(.gradepad-detail) .detail-meta {
+  margin-top: -1.75rem;
+}
+
+.gradepad-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* Shape-following glow using the image alpha */
+  filter: drop-shadow(0 0 25px rgba(11, 102, 146, 0.6))
+    drop-shadow(0 0 45px rgba(11, 102, 146, 0.5))
+    drop-shadow(0 0 70px rgba(11, 102, 146, 0.35));
+}
+
+/* Disable default GradePad container glow when using shape-following image glow */
+.gradepad-detail.project-glow-5 {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Slightly larger GradePad image on mobile */
+@media (max-width: 768px) {
+  .project-detail-image-container.gradepad-detail {
+    max-width: 85vw !important;
+    width: 85vw !important;
+    transform: translateY(-20px) !important;
+  }
+
+  .gradepad-image {
+    transform: scale(1.1) !important;
+  }
 }
 
 .project-detail-image-container.project-glow-6 {

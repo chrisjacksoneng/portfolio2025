@@ -29,6 +29,7 @@ const ProjectDetail = ({ project, onBack }) => {
   const getImageTransform = (projectId) => {
     if (projectId === 1) return 'none' // WAT.ai: preserve true shape without scaling
     if (projectId === 4) return 'none' // Aeon: preserve true shape without scaling
+    if (projectId === 5) return 'scale(1.15)' // GradePad: zoom on project page (slightly smaller)
     return 'scale(1.15)' // Default - matches home page scaling
   }
 
@@ -49,11 +50,11 @@ const ProjectDetail = ({ project, onBack }) => {
         <h1 className="project-detail-title">{project.title}</h1>
         <h2 className="project-detail-job-title">{project.jobTitle}</h2>
 
-        <div className={`project-detail-image-container project-glow-${project.id} ${project.id === 4 ? 'aeon-detail' : ''} ${project.id === 1 ? 'wat-detail' : ''}`}>
+        <div className={`project-detail-image-container project-glow-${project.id} ${project.id === 4 ? 'aeon-detail' : ''} ${project.id === 1 ? 'wat-detail' : ''} ${project.id === 5 ? 'gradepad-detail' : ''}`}>
           <img
-            src={project.id === 4 ? './images/AeonBGprojectPage.png' : project.image}
+            src={project.id === 4 ? './images/AeonBGprojectPage.png' : project.id === 5 ? './images/GradePadbgPP (2).png' : project.image}
             alt={project.title}
-            className={`project-detail-image ${project.id === 4 ? 'aeon-image' : ''} ${project.id === 1 ? 'wat-image' : ''}`}
+            className={`project-detail-image ${project.id === 4 ? 'aeon-image' : ''} ${project.id === 1 ? 'wat-image' : ''} ${project.id === 5 ? 'gradepad-image' : ''}`}
             style={{
               transform: getImageTransform(project.id)
             }}
