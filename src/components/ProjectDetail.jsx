@@ -323,9 +323,11 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Technical Challenges</h5>
-              <p>Normalizing arbitrary syllabus formats into structured data required careful parsing and guardrails around AI output (filtering, validation, and persistence logic so it survives reloads).</p>
-              <p>Designing a resilient data layer that supports both authenticated sync (Firestore) and guest fallback (local storage) without code duplication.</p>
-              <p>Ensuring grade calculations handled edge cases (missing inputs, zero weights, partial data) while keeping the UI responsive and accurate.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>Normalizing arbitrary syllabus formats into structured data required careful parsing and guardrails around AI output with filtering, validation, and persistence logic so it survives reloads</li>
+                <li>Designing a resilient data layer that supports both authenticated sync with Firestore and guest fallback using local storage without code duplication</li>
+                <li>Ensuring grade calculations handle edge cases including missing inputs, zero weights, and partial data while keeping the UI responsive and accurate</li>
+              </ul>
             </div>
 
             <div className="role-subsection">
@@ -337,9 +339,9 @@ const ProjectDetail = ({ project, onBack }) => {
             <div className="role-subsection">
               <h5>What I Learned</h5>
               <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
-                <li>How to design a state and persistence layer that’s robust to refreshes, offline states, and partial data</li>
-                <li>Effective serverless patterns for AI-assisted features that add real value (not just novelty)</li>
-                <li>Product thinking: building the right defaults (autosave, multi-course, dashboard) solves the user’s core frustrations and keeps the experience delightful</li>
+                <li>The most impactful products solve specific, deeply felt problems. My narrow pain point of losing grade data across sessions led to a solution that students actually wanted to use</li>
+                <li>Iterative MVP development through multiple prototype stages validates assumptions and ensures the product evolves as expected before full implementation</li>
+                <li>Modern UI and UX are critical for user adoption where a polished interface builds trust and differentiates from dated competitors</li>
               </ul>
             </div>
           </div>
