@@ -251,14 +251,44 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Technical Highlights</h5>
-              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
-                <li>Authentication and sync with Firebase Auth + Firestore; guests use local storage seamlessly</li>
-                <li>Immediate persistence pipeline: user inputs and parsed rows are saved in real time (no lost data on refresh)</li>
-                <li>Serverless AI integration: a Netlify function calls an LLM to parse unstructured syllabi into structured assignments with names, weights, and due dates</li>
-                <li>Robust table model: indexing for evaluations, safe rehydration on load, and idempotent updates</li>
-                <li>PWA: service worker caching for fast loads and offline availability; installable on desktop/mobile</li>
-                <li>UI/UX details: input auto-sizing, colour-coded performance states, keyboard-friendly interactions, and consistent autosave triggers</li>
-              </ul>
+              <div className="feature-tiles">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M10,17V14H3V10H10V7L15,12L10,17M10,2H19A2,2 0 0,1 21,4V20A2,2 0 0,1 19,22H10A2,2 0 0,1 8,20V18H10V20H19V4H10V6H8V4A2,2 0 0,1 10,2Z" />
+                    </svg>
+                  </div>
+                  <h5>Authentication & Sync</h5>
+                  <p>Firebase Auth + Firestore for seamless user authentication and data synchronization</p>
+                </div>
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17,12L12,17V14H8V10H12V7M19,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
+                    </svg>
+                  </div>
+                  <h5>Real-time Persistence</h5>
+                  <p>Immediate saving of user inputs and parsed data with no lost information on refresh</p>
+                </div>
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11.03L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11.03C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                    </svg>
+                  </div>
+                  <h5>Serverless AI</h5>
+                  <p>Netlify function with LLM integration to parse any syllabus into structured assignments</p>
+                </div>
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
+                    </svg>
+                  </div>
+                  <h5>Drag & Drop</h5>
+                  <p>Interactive row reordering with quick add/remove for better data organization</p>
+                </div>
+              </div>
             </div>
 
             <div className="role-subsection">
@@ -303,45 +333,6 @@ const ProjectDetail = ({ project, onBack }) => {
               <p>I focused on clarity and speed with clean typography, smart spacing, and colour-coded signals for performance. Tables are intentionally minimal and interactive with drag-and-drop, quick add/remove, and collapse/expand features, so managing a course feels fast and frictionless. The dashboard gives an immediate sense of semester progress without digging.</p>
             </div>
 
-            {/* Feature tiles */}
-            <div className="feature-tiles">
-              <div className="tile">
-                <div className="chip">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.35,10.04C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.04C2.34,8.36 0,10.91 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.04M19,18H6A4,4 0 0,1 2,14C2,11.24 4.24,9 7,9C7.83,9 8.58,9.18 9.23,9.5C10,7.77 11.84,6.5 14,6.5C16.76,6.5 19,8.74 19,11.5C19,12.81 18.57,14 17.87,14.93C17.24,15.52 16.4,15.84 15.5,15.84C15.5,17.38 16.62,18.5 18.16,18.5C18.86,18.5 19.5,18.16 19.93,17.64C19.74,17.85 19.5,18 19.24,18H19Z" />
-                  </svg>
-                </div>
-                <h5>Multi-course Autosave</h5>
-                <p>Persistent multi-course tracking with real-time autosave across all sessions</p>
-              </div>
-              <div className="tile">
-                <div className="chip">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M5,9H19V7H5M22,5V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V5A2,2 0 0,1 4,3H20A2,2 0 0,1 22,5M6,17H10V15H6M6,13H14V11H6M6,9H14V7H6V9Z" />
-                  </svg>
-                </div>
-                <h5>GPA Dashboard</h5>
-                <p>Semester-wide dashboard with GPA calculations and per-course summaries</p>
-              </div>
-              <div className="tile">
-                <div className="chip">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11.03L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11.03C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
-                  </svg>
-                </div>
-                <h5>AI Syllabus Parser</h5>
-                <p>Convert pasted syllabi into structured assignments using LLM parsing</p>
-              </div>
-              <div className="tile">
-                <div className="chip">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
-                  </svg>
-                </div>
-                <h5>Drag & Drop</h5>
-                <p>Interactive row reordering with quick add/remove and collapsible tables</p>
-              </div>
-            </div>
 
             <div className="role-subsection">
               <h5>What I Learned</h5>
