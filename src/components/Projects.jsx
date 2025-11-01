@@ -18,7 +18,7 @@ export const projectsData = [
     year: "2025",
     timeline: "Jan. 2025 - Apr. 2025",
     jobTitle: "Personal Project",
-    description: "A comprehensive grade tracking platform for students. Built with user authentication, real-time grade calculations, and a semester-wide dashboard view.",
+    description: "A comprehensive grade tracking platform for students. Built with real-time autosave, ensuring data persists across devices instantly. Features user authentication, intelligent grade calculations, and a semester-wide dashboard view.",
     image: "./images/GradePadBg (0.0).png",
     tech: "HTML, CSS, JavaScript, Firebase, Firestore, AI Parsing"
   },
