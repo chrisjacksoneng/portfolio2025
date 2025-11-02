@@ -758,9 +758,9 @@ body {
   margin-top: 5rem;
 }
 
-/* Encore project (id 3): lower the meta section */
+/* Encore project (id 3): pull meta section up closer under image */
 .project-detail-content:has(.project-glow-3) .detail-meta {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 /* Gradepad project (id 5): lower the meta section */
@@ -1250,16 +1250,16 @@ body {
   background: transparent !important;
 }
 
-/* Slightly larger GradePad image on mobile */
+/* GradePad image on mobile */
 @media (max-width: 768px) {
   .project-detail-image-container.gradepad-detail {
-    max-width: 85vw !important;
-    width: 85vw !important;
-    transform: translateY(-20px) !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    transform: translateY(-60px) !important;
   }
 
   .gradepad-image {
-    transform: scale(1.1) !important;
+    transform: scale(1) !important;
   }
 }
 
