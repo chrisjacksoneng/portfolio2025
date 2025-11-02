@@ -210,7 +210,7 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Reflection</h5>
-              <p>I really enjoyed my time at QQuote. The team was amazing, and I got a lot of opportunities to take real ownership over my work. Getting to explore product management, design, and testing in a single role was exactly what I was looking for. Even though this was my first co-op, I felt like I made a real impact. Working across the full product lifecycle taught me so much about how good software actually gets built, and it set me up perfectly to come back for a second term focused on the technical side.</p>
+              <p>I really enjoyed my time at QQuote. The team was amazing, and I got a lot of opportunities to take real ownership over my work. Getting to explore product management, design, and testing in a single role was exactly what I was looking for.Even though this was my first co-op, I felt like I made a real impact. Working across the full product lifecycle taught me so much about how good software actually gets built, and it set me up perfectly to come back for a second term focused on the technical side.</p>
             </div>
           </div>
         )}
@@ -416,7 +416,7 @@ const ProjectDetail = ({ project, onBack }) => {
                 <li><strong>Performance Optimization:</strong> I spent considerable time optimizing the render performance, using React.memo where appropriate and minimizing unnecessary re-renders. I initially experimented with auto-rotation using useEffect and setInterval, but ultimately disabled it in favor of user-controlled navigation for better accessibility and intentional user interaction.</li>
               </ul>
 
-              <p>Here's a demonstration of the MVP I created, shared within NDA limitations.</p>
+              <p>Here's a demonstration of the MVP I created.</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
@@ -449,7 +449,7 @@ const ProjectDetail = ({ project, onBack }) => {
             <div className="role-subsection">
               <h5>Deep Research Model</h5>
               <p>I also worked on implementing the <strong>deep research</strong> feature, which allowed users to get comprehensive, in-depth analysis on specific topics. The model would pull from multiple sources and provide detailed insights that went beyond surface-level information.</p>
-              <p>Here's a demonstration of the MVP I created, shared within NDA limitations.</p>
+              <p>Here's a demonstration of the MVP I created.</p>
               <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
                 <div style={{
                   width: '100%',
