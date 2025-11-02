@@ -63,7 +63,7 @@ function App() {
   useEffect(() => {
     const path = window.location.pathname.replace(/^\/+/, '')
     if (!path) return
-    const customSlugs = { 3: 'encore-financial', 4: 'aeon' }
+    const customSlugs = { 2: 'qquote2', 3: 'encore-financial', 4: 'aeon', 6: 'qquote1' }
     const slugify = (title) => title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
     const match = projectsData.find(p => {
       const expected = customSlugs[p.id] || slugify(p.title)
@@ -100,8 +100,10 @@ function App() {
     setSelectedProject(project)
     // Custom URL slugs for specific projects
     const customSlugs = {
+      2: 'qquote2', // QQuote Software Engineering
       3: 'encore-financial', // Encore Financial Ltd
-      4: 'aeon' // Aeon Stellar Commerce
+      4: 'aeon', // Aeon Stellar Commerce
+      6: 'qquote1' // QQuote Special Projects
     }
     // Create URL-friendly slug from project title
     const urlSlug = customSlugs[project.id] || project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')

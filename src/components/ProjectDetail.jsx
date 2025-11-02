@@ -19,8 +19,8 @@ const ProjectDetail = ({ project, onBack }) => {
       1: 'https://github.com/FORTif-ai', // WAT.ai
       3: 'https://encorefinancialgroup.ca/', // Encore
       4: 'https://aeonstellar.co/', // Aeon
-      2: 'https://qquote.com/', // QQuote
-      6: 'https://qquote.com/', // QQuote Special
+      2: 'https://qquote2.com/', // QQuote
+      6: 'https://qquote1.com/', // QQuote Special
       5: 'https://gradepad.netlify.app/' // GradePad
     }
     return links[projectId] || '#'
@@ -149,64 +149,63 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>What I Worked On</h5>
-              <div className="contributions-grid">
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <div className="feature-tiles">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V7H5V5H19M5,19V9H19V19H5M7,11H9V17H7V11M11,11H13V17H11V11M15,11H17V17H15V11Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Feature Specifications</strong>
-                    <p>I wrote detailed <strong>feature specs</strong> and requirements to help guide the development team through the product development process.</p>
-                  </div>
+                  <h5>Feature Specifications</h5>
+                  <p>Wrote detailed feature specs and requirements to guide the development team through the product development process</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Design & Wireframes</strong>
-                    <p>I created wireframes and mockups to visualize new product ideas. This was fun because I got to think about the user experience and how things should look and feel.</p>
-                  </div>
+                  <h5>Design & Wireframes</h5>
+                  <p>Created wireframes and mockups to visualize new product ideas with focus on user experience and design</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>QA Testing</strong>
-                    <p>I helped with QA testing and ran through different scenarios to make sure features worked as expected. It was satisfying catching bugs before they made it to users.</p>
-                  </div>
+                  <h5>QA Testing</h5>
+                  <p>QA testing across different scenarios to ensure features worked as expected and bugs were caught early</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Documentation</strong>
-                    <p>I wrote up internal docs to help with team processes and future projects. Good documentation makes everyone's life easier.</p>
-                  </div>
+                  <h5>Documentation</h5>
+                  <p>Wrote internal documentation to help with team processes and future project development</p>
                 </div>
               </div>
             </div>
 
             <div className="role-subsection">
               <h5>Product Management</h5>
-              <p>Working on the product side was eye-opening. I learned how to think about features from the user's perspective, not just what's technically possible, but what actually solves a problem for them. Writing feature specs taught me to think through edge cases and user flows before any code gets written.</p>
-              <p>I also got to work on prioritization and planning. Seeing how the team decided what to build next, balancing user requests with technical debt and business goals, was really valuable. It's one thing to know how to code, but understanding why you're building something is just as important.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>Learned to think about features from the user's perspective, focusing on what actually solves problems rather than just what's technically possible</li>
+                <li>Writing feature specs taught me to think through edge cases and user flows before any code gets written</li>
+                <li>Got experience with prioritization and planning by seeing how the team balanced user requests with technical debt and business goals</li>
+                <li>Learned the value of getting an extremely early MVP out the door, sometimes building something as simple as an Excel spreadsheet to validate ideas before coding</li>
+              </ul>
             </div>
 
             <div className="role-subsection">
               <h5>Design & UX</h5>
-              <p>Creating wireframes and mockups was one of my favourite parts. I used <strong>Figma</strong> to design interfaces and think through <strong>user flows</strong>. There's something satisfying about seeing an idea go from a rough sketch to a polished mockup.</p>
-              <p>I learned to pay attention to details that I hadn't really thought about before, like spacing, typography, colour choices, and how different states look (loading, error, success). These small details make a huge difference in how users experience the product.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>Created hundreds of wireframes using Figma, making sure to factor in every possible click and scenario</li>
+                <li>Gained respect for the design process by experiencing how much thought goes into user flows from rough sketches to polished mockups</li>
+                <li>Learned to pay attention to spacing, typography, colour choices, and different states like loading, error, and success</li>
+              </ul>
             </div>
 
             <div className="role-subsection">

@@ -60,7 +60,7 @@ export const projectsData = [
     jobTitle: "Special Projects Engineering Assistant",
     description: "Co-op term creating feature specifications, designed wireframes and mockups, conducted QA testing, and wrote internal documentation.",
     image: "./images/QQuoteBg.png",
-    tech: "Figma, Product Management, Analytics"
+    tech: "Figma, Product Management, Postman, Power BI, SQL, PHP, RUM Tracking"
   }
 ]
 
