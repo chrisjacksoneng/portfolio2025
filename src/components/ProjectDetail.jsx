@@ -486,7 +486,7 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>The Experience</h5>
-              <p>Working at Encore was a great learning experience. The team was small but really talented, and I got to wear a lot of different hats. Going from designing a feature to building it to testing it gave me a much better sense of the full product development cycle. Plus, working in fintech meant I had to think carefully about security and data handling, which was great practice for building production-ready software.</p>
+              <p>Working in fintech taught me a lot about the unique challenges of the finance industry. I integrated market data APIs and worked with real-time financial data streams, which meant dealing with latency, rate limits, and ensuring data accuracy. I also had to think carefully about regulatory compliance, security protocols, and proper data handling for sensitive financial information. Building features that handled real money and user investments required attention to detail I hadn't experienced before, and it was great practice for building production-ready software in a highly regulated industry.</p>
             </div>
           </div>
         )}
