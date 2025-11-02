@@ -19,8 +19,8 @@ const ProjectDetail = ({ project, onBack }) => {
       1: 'https://github.com/FORTif-ai', // WAT.ai
       3: 'https://encorefinancialgroup.ca/', // Encore
       4: 'https://aeonstellar.co/', // Aeon
-      2: 'https://qquote2.com/', // QQuote
-      6: 'https://qquote1.com/', // QQuote Special
+      2: 'https://qquote.com/', // QQuote
+      6: 'https://qquote.com/', // QQuote Special
       5: 'https://gradepad.netlify.app/' // GradePad
     }
     return links[projectId] || '#'
@@ -209,9 +209,8 @@ const ProjectDetail = ({ project, onBack }) => {
             </div>
 
             <div className="role-subsection">
-              <h5>What's Next</h5>
-              <p>I'm coming back for another term, but this time I'll be diving into more technical work, building new features and working with APIs. I'm excited to get more hands-on with the code and apply what I learned about product thinking to the technical implementation.</p>
-              <p>Having that product management experience will be really valuable when I'm building features. I'll have a better sense of what users actually need and how to prioritize my work.</p>
+              <h5>Reflection</h5>
+              <p>I really enjoyed my time at QQuote. The team was amazing, and I got a lot of opportunities to take real ownership over my work. Getting to explore product management, design, and testing in a single role was exactly what I was looking for. Even though this was my first co-op, I felt like I made a real impact. Working across the full product lifecycle taught me so much about how good software actually gets built, and it set me up perfectly to come back for a second term focused on the technical side.</p>
             </div>
           </div>
         )}
