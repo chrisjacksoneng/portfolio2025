@@ -30,7 +30,7 @@ export const projectsData = [
     jobTitle: "Software Engineering Intern",
     description: "Return internship focused on API development and QA automation. Designed API specifications to automate dealership processes and implemented Cypress.io test suites.",
     image: "./images/QQuoteBg.png",
-    tech: "Postman, QA Automation, Cypress.io, PHP"
+    tech: "Postman, QA Automation, PHP, Swagger"
   },
   {
     id: 3,
