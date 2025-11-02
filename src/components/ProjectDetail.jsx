@@ -352,50 +352,42 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>What I Built</h5>
-              <div className="contributions-grid">
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <div className="feature-tiles">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Front-End Development</strong>
-                    <p>I built out the React components for the financial dashboards and portfolio tracking features. This involved a lot of work with <strong>real-time data visualization</strong> and making sure everything felt responsive and fast.</p>
-                  </div>
+                  <h5>Front-End Development</h5>
+                  <p>Built React components for financial dashboards and portfolio tracking with real-time data visualization and responsive performance</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Back-End & API Integration</strong>
-                    <p>I worked on the server-side logic and integrated <strong>market data APIs</strong> to pull real-time financial information. Also handled user authentication and session management to keep everything secure.</p>
-                  </div>
+                  <h5>Back-End & API Integration</h5>
+                  <p>Server-side logic with market data API integration and secure user authentication and session management</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Data Visualization & Analytics</strong>
-                    <p>I created performance dashboards that showed investment KPIs, historical trends, and AI-generated insights. This was one of the more fun parts because I got to figure out how to make complex financial data easy to understand at a glance.</p>
-                  </div>
+                  <h5>Data Visualization & Analytics</h5>
+                  <p>Performance dashboards showing investment KPIs, historical trends, and AI-generated insights</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>UX/UI Design</strong>
-                    <p>I designed wireframes and mockups for the core financial workflows. This was great practice thinking through user flows and making sure the experience felt intuitive, especially for something as complex as portfolio management.</p>
-                  </div>
+                  <h5>UX/UI Design</h5>
+                  <p>Wireframes and mockups for core financial workflows with intuitive user experience</p>
                 </div>
               </div>
             </div>
