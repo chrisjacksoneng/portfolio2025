@@ -500,50 +500,42 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>What I Built</h5>
-              <div className="contributions-grid">
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <div className="feature-tiles">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Front-End Design & UX</strong>
-                    <p>I worked on the paywall UI in Figma and helped design the user flow for subscriptions. We consistently sent screenshots and demo videos to Primie, and the feedback was almost always positive. It was clear the designs met the project goals.</p>
-                  </div>
+                  <h5>Front-End Design & UX</h5>
+                  <p>Paywall UI design in Figma with subscription user flows that consistently received positive feedback and met project goals</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Stripe & Firebase Integration</strong>
-                    <p>I integrated <strong>Stripe</strong> for payment processing and connected it with <strong>Firebase</strong> for user authentication. We spent significant time troubleshooting the Stripe integration and deployment process. However, it was ultimately worth it when we got a working product!</p>
-                  </div>
+                  <h5>Stripe & Firebase Integration</h5>
+                  <p>Integrated Stripe payment processing and Firebase authentication despite deployment challenges to deliver a working product</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Paywall Implementation</strong>
-                    <p>I built the access control logic for the different subscription tiers, including free trial, standard, and premium. This involved figuring out how to gate features properly and handle subscription states across the app. We also did extensive research on other paywall designs to find inspiration and analyze best practices.</p>
-                  </div>
+                  <h5>Paywall Implementation</h5>
+                  <p>Access control logic for subscription tiers with feature gating and research on paywall best practices</p>
                 </div>
-                <div className="contribution-item">
-                  <div className="contribution-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <div className="tile">
+                  <div className="chip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
                     </svg>
                   </div>
-                  <div className="contribution-text">
-                    <strong>Testing & Documentation</strong>
-                    <p>I created scenario videos replicating what would happen on the live app and wrote comprehensive developer documentation detailing the paywall setup, configuration, and maintenance steps. We also documented the problems we encountered and how future developers should approach them.</p>
-                  </div>
+                  <h5>Testing & Documentation</h5>
+                  <p>Scenario videos and comprehensive developer documentation for paywall setup and maintenance</p>
                 </div>
               </div>
             </div>
@@ -570,15 +562,17 @@ const ProjectDetail = ({ project, onBack }) => {
 
             <div className="role-subsection">
               <h5>Technical Challenges</h5>
-              <p>One of the biggest challenges we faced was with the Stripe integration and deployment process. Despite spending significant time troubleshooting and testing different approaches, we weren't able to fully overcome these deployment issues within the timeframe given. However, this experience taught me a lot about the complexities of payment system integration and deployment.</p>
-              <p>We also ran into challenges with Stripe price configuration and Firebase rules. Working through these problems helped me understand the technical requirements behind payment gateways and the importance of thorough documentation for future developers.</p>
+              <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                <li>Designing the paywall required over a week of research on working paywalls to ensure we met modern standards and followed industry best practices</li>
+                <li>Stripe integration and deployment required navigating complex payment system architectures with troubleshooting and testing different approaches to understand payment gateway integration and deployment workflows</li>
+                <li>Stripe price configuration and Firebase rules presented challenges that helped me understand the technical requirements behind payment gateways and the importance of thorough documentation</li>
+              </ul>
             </div>
 
             <div className="role-subsection">
               <h5>The Experience</h5>
-              <p>Working at Aeon was a great introduction to the startup world. The team was small, which meant I had a lot of ownership and got to see how decisions were made quickly. Working directly with Primie gave me insight into product strategy and how technical decisions impact the business.</p>
-              <p>Working with payment infrastructure and subscription systems required learning to work within platform constraints and dealing with complex integrations, which taught me valuable lessons about flexibility and finding creative solutions.</p>
-              <p>I'm proud of what we accomplished. We contributed concrete deliverables including paywall designs, architectural planning, and user flow strategies that will support future implementation. This experience strengthened both my design and problem-solving skills, while giving me a deeper appreciation for the collaboration and persistence needed to bring new features to life.</p>
+              <p>Working at Aeon was a great experience. The team was small, which meant I had a lot of ownership and got to see how decisions were made quickly. Working directly with Primie gave me real insight into product strategy and how technical decisions impact the business.</p>
+              <p>Working with payment infrastructure and subscription systems taught me to work within platform constraints and deal with complex integrations. I learned a lot about finding creative solutions when things don't go exactly as planned, and overall got a much better sense of what it takes to bring new features to life. .</p>
             </div>
           </div>
         )}
