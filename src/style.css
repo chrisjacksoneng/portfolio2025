@@ -1230,7 +1230,7 @@ body {
 
 /* Pull Aeon detail meta (timeline, role, etc.) closer under image */
 .project-detail-content:has(.aeon-detail) .detail-meta {
-  margin-top: -3.95rem;
+  margin-top: 0rem;
 }
 
 .gradepad-image {
