@@ -348,7 +348,7 @@ const ProjectDetail = ({ project, onBack }) => {
         {project.id === 3 && (
           <div className="about-this-role-section">
             <h4>About This Role</h4>
-            <p>Over the summer of 2025, I joined a small team at Encore Financial, working with <a href="https://www.linkedin.com/in/hasanjee/" target="_blank" rel="noopener noreferrer" className="team-member-link">Bilal Hasanjee</a> to build a prototype for an <strong>AI-powered financial platform</strong>. We were building something pretty ambitious: a full suite for investment research, portfolio management, and wealth tracking. Working remotely with this team gave me a ton of ownership and let me dive deep into both frontend and backend work.</p>
+            <p>Over the summer of 2025, I joined a small team at Encore Financial, working with <a href="https://www.linkedin.com/in/hasanjee/" target="_blank" rel="noopener noreferrer" className="team-member-link">Bilal Hasanjee</a> to build an <strong>AI-powered financial platform</strong>. We were building something pretty ambitious: a full suite for investment research, portfolio management, and wealth tracking. Working remotely with this team gave me a ton of ownership and let me dive deep into both frontend and backend work.</p>
 
             <div className="role-subsection">
               <h5>What I Built</h5>
@@ -386,8 +386,8 @@ const ProjectDetail = ({ project, onBack }) => {
                       <path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z" />
                     </svg>
                   </div>
-                  <h5>UX/UI Design</h5>
-                  <p>Wireframes and mockups for core financial workflows with intuitive user experience</p>
+                  <h5>Advanced AI Tools</h5>
+                  <p>PDF parsing capabilities and deep research models for comprehensive financial analysis</p>
                 </div>
               </div>
             </div>
