@@ -238,32 +238,32 @@ body {
 
 .project-2 .project-image:hover {
   /* QQuote */
-  box-shadow: 0 0 30px 4px rgba(218, 108, 53, 0.65),
-    0 0 16px 2px rgba(218, 108, 53, 0.5), 0 0 10px rgba(218, 108, 53, 0.35);
+  box-shadow: 0 0 40px 8px rgba(218, 108, 53, 0.65),
+    0 0 20px 4px rgba(218, 108, 53, 0.5), 0 0 12px 2px rgba(218, 108, 53, 0.35);
 }
 
 .project-3 .project-image:hover {
   /* Encore */
-  box-shadow: 0 0 30px 4px rgba(249, 98, 16, 0.65),
-    0 0 16px 2px rgba(249, 98, 16, 0.5), 0 0 10px rgba(249, 98, 16, 0.35);
+  box-shadow: 0 0 40px 8px rgba(249, 98, 16, 0.65),
+    0 0 20px 4px rgba(249, 98, 16, 0.5), 0 0 12px 2px rgba(249, 98, 16, 0.35);
 }
 
 .project-4 .project-image:hover {
   /* Aeon */
-  box-shadow: 0 0 50px 8px rgba(66, 37, 116, 0.8),
-    0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4);
+  box-shadow: 0 0 40px 8px rgba(115, 80, 200, 0.9),
+    0 0 20px 4px rgba(115, 80, 200, 0.75), 0 0 12px 2px rgba(115, 80, 200, 0.55);
 }
 
 .project-5 .project-image:hover {
   /* GradePad */
-  box-shadow: 0 0 40px 10px rgba(11, 102, 146, 0.85),
-    0 0 28px 6px rgba(11, 102, 146, 0.6), 0 0 18px 3px rgba(11, 102, 146, 0.45);
+  box-shadow: 0 0 40px 8px rgba(11, 102, 146, 0.85),
+    0 0 20px 4px rgba(11, 102, 146, 0.6), 0 0 12px 2px rgba(11, 102, 146, 0.45);
 }
 
 .project-6 .project-image:hover {
   /* QQuote Special */
-  box-shadow: 0 0 30px 4px rgba(218, 108, 53, 0.65),
-    0 0 16px 2px rgba(218, 108, 53, 0.5), 0 0 10px rgba(218, 108, 53, 0.35);
+  box-shadow: 0 0 40px 8px rgba(218, 108, 53, 0.65),
+    0 0 20px 4px rgba(218, 108, 53, 0.5), 0 0 12px 2px rgba(218, 108, 53, 0.35);
 }
 
 .project-card:hover .project-title {
@@ -278,37 +278,37 @@ body {
 
 .project-1:has(.project-title:hover) .project-image {
   /* WAT.ai */
-  box-shadow: 0 0 35px rgba(255, 206, 26, 0.65);
+  box-shadow: 0 0 40px 8px rgba(255, 206, 26, 0.65);
 }
 
 .project-2:has(.project-title:hover) .project-image {
   /* QQuote */
-  box-shadow: 0 0 30px 4px rgba(218, 108, 53, 0.65),
-    0 0 16px 2px rgba(218, 108, 53, 0.5), 0 0 10px rgba(218, 108, 53, 0.35);
+  box-shadow: 0 0 40px 8px rgba(218, 108, 53, 0.65),
+    0 0 20px 4px rgba(218, 108, 53, 0.5), 0 0 12px 2px rgba(218, 108, 53, 0.35);
 }
 
 .project-3:has(.project-title:hover) .project-image {
   /* Encore */
-  box-shadow: 0 0 30px 4px rgba(249, 98, 16, 0.65),
-    0 0 16px 2px rgba(249, 98, 16, 0.5), 0 0 10px rgba(249, 98, 16, 0.35);
+  box-shadow: 0 0 40px 8px rgba(249, 98, 16, 0.65),
+    0 0 20px 4px rgba(249, 98, 16, 0.5), 0 0 12px 2px rgba(249, 98, 16, 0.35);
 }
 
 .project-4:has(.project-title:hover) .project-image {
   /* Aeon */
-  box-shadow: 0 0 50px 8px rgba(66, 37, 116, 0.8),
-    0 0 28px 3px rgba(66, 37, 116, 0.6), 0 0 15px rgba(66, 37, 116, 0.4);
+  box-shadow: 0 0 40px 8px rgba(115, 80, 200, 0.9),
+    0 0 20px 4px rgba(115, 80, 200, 0.75), 0 0 12px 2px rgba(115, 80, 200, 0.55);
 }
 
 .project-5:has(.project-title:hover) .project-image {
   /* GradePad */
-  box-shadow: 0 0 40px 10px rgba(11, 102, 146, 0.85),
-    0 0 28px 6px rgba(11, 102, 146, 0.6), 0 0 18px 3px rgba(11, 102, 146, 0.45);
+  box-shadow: 0 0 40px 8px rgba(11, 102, 146, 0.85),
+    0 0 20px 4px rgba(11, 102, 146, 0.6), 0 0 12px 2px rgba(11, 102, 146, 0.45);
 }
 
 .project-6:has(.project-title:hover) .project-image {
   /* QQuote Special */
-  box-shadow: 0 0 30px 4px rgba(218, 108, 53, 0.65),
-    0 0 16px 2px rgba(218, 108, 53, 0.5), 0 0 10px rgba(218, 108, 53, 0.35);
+  box-shadow: 0 0 40px 8px rgba(218, 108, 53, 0.65),
+    0 0 20px 4px rgba(218, 108, 53, 0.5), 0 0 12px 2px rgba(218, 108, 53, 0.35);
 }
 
 .project-image img {
@@ -576,6 +576,111 @@ body {
   }
 }
 
+/* Laptop screens - slightly reduce glow intensity */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-1 .project-image:hover {
+    box-shadow: 0 0 32px 6px rgba(255, 206, 26, 0.65);
+  }
+
+  .project-2 .project-image:hover {
+    box-shadow: 0 0 32px 6px rgba(218, 108, 53, 0.65),
+      0 0 16px 3px rgba(218, 108, 53, 0.5),
+      0 0 10px 1.5px rgba(218, 108, 53, 0.35);
+  }
+
+  .project-3 .project-image:hover {
+    box-shadow: 0 0 32px 6px rgba(249, 98, 16, 0.65),
+      0 0 16px 3px rgba(249, 98, 16, 0.5),
+      0 0 10px 1.5px rgba(249, 98, 16, 0.35);
+  }
+
+  .project-4 .project-image:hover {
+    box-shadow: 0 0 32px 6px rgba(100, 70, 180, 0.9),
+      0 0 16px 3px rgba(100, 70, 180, 0.7),
+      0 0 10px 1.5px rgba(100, 70, 180, 0.5);
+  }
+
+  .project-5 .project-image:hover {
+    box-shadow: 0 0 32px 6px rgba(11, 102, 146, 0.85),
+      0 0 16px 3px rgba(11, 102, 146, 0.6),
+      0 0 10px 1.5px rgba(11, 102, 146, 0.45);
+  }
+
+  .project-6 .project-image:hover {
+    box-shadow: 0 0 32px 6px rgba(218, 108, 53, 0.65),
+      0 0 16px 3px rgba(218, 108, 53, 0.5),
+      0 0 10px 1.5px rgba(218, 108, 53, 0.35);
+  }
+
+  .project-1:has(.project-title:hover) .project-image {
+    box-shadow: 0 0 32px 6px rgba(255, 206, 26, 0.65);
+  }
+
+  .project-2:has(.project-title:hover) .project-image {
+    box-shadow: 0 0 32px 6px rgba(218, 108, 53, 0.65),
+      0 0 16px 3px rgba(218, 108, 53, 0.5),
+      0 0 10px 1.5px rgba(218, 108, 53, 0.35);
+  }
+
+  .project-3:has(.project-title:hover) .project-image {
+    box-shadow: 0 0 32px 6px rgba(249, 98, 16, 0.65),
+      0 0 16px 3px rgba(249, 98, 16, 0.5),
+      0 0 10px 1.5px rgba(249, 98, 16, 0.35);
+  }
+
+  .project-4:has(.project-title:hover) .project-image {
+    box-shadow: 0 0 32px 6px rgba(100, 70, 180, 0.9),
+      0 0 16px 3px rgba(100, 70, 180, 0.7),
+      0 0 10px 1.5px rgba(100, 70, 180, 0.5);
+  }
+
+  .project-5:has(.project-title:hover) .project-image {
+    box-shadow: 0 0 32px 6px rgba(11, 102, 146, 0.85),
+      0 0 16px 3px rgba(11, 102, 146, 0.6),
+      0 0 10px 1.5px rgba(11, 102, 146, 0.45);
+  }
+
+  .project-6:has(.project-title:hover) .project-image {
+    box-shadow: 0 0 32px 6px rgba(218, 108, 53, 0.65),
+      0 0 16px 3px rgba(218, 108, 53, 0.5),
+      0 0 10px 1.5px rgba(218, 108, 53, 0.35);
+  }
+
+  .project-detail-image-container.project-glow-1 {
+    box-shadow: 0 0 32px 6px rgba(255, 206, 26, 0.65);
+  }
+
+  .project-detail-image-container.project-glow-2 {
+    box-shadow: 0 0 32px 6px rgba(218, 108, 53, 0.65),
+      0 0 16px 3px rgba(218, 108, 53, 0.5),
+      0 0 10px 1.5px rgba(218, 108, 53, 0.35);
+  }
+
+  .project-detail-image-container.project-glow-3 {
+    box-shadow: 0 0 32px 6px rgba(249, 98, 16, 0.65),
+      0 0 16px 3px rgba(249, 98, 16, 0.5),
+      0 0 10px 1.5px rgba(249, 98, 16, 0.35);
+  }
+
+  .project-detail-image-container.project-glow-4 {
+    box-shadow: 0 0 32px 6px rgba(115, 80, 200, 0.75),
+      0 0 16px 3px rgba(115, 80, 200, 0.6),
+      0 0 10px 1.5px rgba(115, 80, 200, 0.4);
+  }
+
+  .project-detail-image-container.project-glow-5 {
+    box-shadow: 0 0 32px 6px rgba(11, 102, 146, 0.85),
+      0 0 16px 3px rgba(11, 102, 146, 0.6),
+      0 0 10px 1.5px rgba(11, 102, 146, 0.45);
+  }
+
+  .project-detail-image-container.project-glow-6 {
+    box-shadow: 0 0 32px 6px rgba(218, 108, 53, 0.65),
+      0 0 16px 3px rgba(218, 108, 53, 0.5),
+      0 0 10px 1.5px rgba(218, 108, 53, 0.35);
+  }
+}
+
 /* Project Detail Page Styles */
 .project-detail {
   min-height: 100vh;
@@ -793,9 +898,9 @@ body {
   height: auto;
   margin: 0 auto;
   /* Shape-following glow using the image alpha */
-  filter: drop-shadow(0 0 25px rgba(66, 37, 116, 0.6))
-    drop-shadow(0 0 45px rgba(66, 37, 116, 0.5))
-    drop-shadow(0 0 75px rgba(66, 37, 116, 0.35));
+  filter: drop-shadow(0 0 25px rgba(115, 80, 200, 0.8))
+    drop-shadow(0 0 45px rgba(115, 80, 200, 0.65))
+    drop-shadow(0 0 75px rgba(115, 80, 200, 0.5));
 }
 
 /* Disable default Aeon container glow when using shape-following image glow */
@@ -1193,27 +1298,27 @@ body {
 
 /* Project-specific glow effects for detail pages */
 .project-detail-image-container.project-glow-1 {
-  box-shadow: 0 0 35px rgba(255, 206, 26, 0.65); /* FFCE1A for WAT.ai */
+  box-shadow: 0 0 40px 8px rgba(255, 206, 26, 0.65); /* FFCE1A for WAT.ai */
 }
 
 .project-detail-image-container.project-glow-2 {
-  box-shadow: 0 0 30px 4px rgba(218, 108, 53, 0.65),
-    0 0 16px 2px rgba(218, 108, 53, 0.5), 0 0 10px rgba(218, 108, 53, 0.35); /* DA6C35 for QQuote */
+  box-shadow: 0 0 40px 8px rgba(218, 108, 53, 0.65),
+    0 0 20px 4px rgba(218, 108, 53, 0.5), 0 0 12px 2px rgba(218, 108, 53, 0.35); /* DA6C35 for QQuote */
 }
 
 .project-detail-image-container.project-glow-3 {
-  box-shadow: 0 0 30px 4px rgba(249, 98, 16, 0.65),
-    0 0 16px 2px rgba(249, 98, 16, 0.5), 0 0 10px rgba(249, 98, 16, 0.35); /* F96210 for Encore */
+  box-shadow: 0 0 40px 8px rgba(249, 98, 16, 0.65),
+    0 0 20px 4px rgba(249, 98, 16, 0.5), 0 0 12px 2px rgba(249, 98, 16, 0.35); /* F96210 for Encore */
 }
 
 .project-detail-image-container.project-glow-4 {
-  box-shadow: 0 0 40px 6px rgba(66, 37, 116, 0.55),
-    0 0 22px 2px rgba(66, 37, 116, 0.35), 0 0 10px rgba(66, 37, 116, 0.25); /* Reduced intensity glow for Aeon */
+  box-shadow: 0 0 40px 8px rgba(115, 80, 200, 0.8),
+    0 0 20px 4px rgba(115, 80, 200, 0.65), 0 0 12px 2px rgba(115, 80, 200, 0.45); /* Bolder Aeon glow */
 }
 
 .project-detail-image-container.project-glow-5 {
   box-shadow: 0 0 40px 8px rgba(11, 102, 146, 0.85),
-    0 0 25px rgba(11, 102, 146, 0.7); /* #0B6692 for GradePad */
+    0 0 20px 4px rgba(11, 102, 146, 0.6), 0 0 12px 2px rgba(11, 102, 146, 0.45); /* #0B6692 for GradePad */
 }
 
 /* Make GradePad image container larger on project page */
@@ -1272,8 +1377,8 @@ body {
 }
 
 .project-detail-image-container.project-glow-6 {
-  box-shadow: 0 0 30px 4px rgba(218, 108, 53, 0.65),
-    0 0 16px 2px rgba(218, 108, 53, 0.5), 0 0 10px rgba(218, 108, 53, 0.35); /* DA6C35 for QQuote Special */
+  box-shadow: 0 0 40px 8px rgba(218, 108, 53, 0.65),
+    0 0 20px 4px rgba(218, 108, 53, 0.5), 0 0 12px 2px rgba(218, 108, 53, 0.35); /* DA6C35 for QQuote Special */
 }
 
 /* Footer Styles */
