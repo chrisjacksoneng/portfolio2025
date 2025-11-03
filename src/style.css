@@ -1369,6 +1369,11 @@ body {
     max-width: 100% !important;
     width: 100% !important;
     transform: translateY(-60px) !important;
+    box-shadow: none !important;
+  }
+
+  .project-detail-image-container.gradepad-detail.project-glow-5 {
+    box-shadow: none !important;
   }
 
   .gradepad-image {
