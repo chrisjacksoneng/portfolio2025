@@ -234,7 +234,8 @@ const ProjectDetail = ({ project, onBack }) => {
                 <li>Persistent multi-course grade tracking with autosave</li>
                 <li>Semester dashboard with GPA and per-course summaries</li>
                 <li>AI-powered Syllabus Parser that converts pasted syllabi into graded evaluations</li>
-                <li>Drag-and-drop row reordering, quick add/remove rows, and collapsible tables</li>
+                <li>Firestore storage for logged-in users with cross-device sync</li>
+                <li>localStorage for guests accounts that persists across sessions and page reloads</li>
                 <li>Theming and clean, responsive UI with installable PWA support</li>
               </ul>
             </div>
@@ -280,11 +281,11 @@ const ProjectDetail = ({ project, onBack }) => {
                 <div className="tile">
                   <div className="chip">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
+                      <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V7H5V5H19M5,19V9H19V19H5M7,11H9V17H7V11M11,11H13V17H11V11M15,11H17V17H15V11Z" />
                     </svg>
                   </div>
-                  <h5>Drag & Drop</h5>
-                  <p>Interactive row reordering with quick add/remove for better data organization</p>
+                  <h5>Guest Data Persistence</h5>
+                  <p>localStorage for guests: auto-saves and persists across sessions without an account</p>
                 </div>
               </div>
             </div>
