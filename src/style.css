@@ -869,9 +869,9 @@ body {
   margin-top: 5rem;
 }
 
-/* Encore project (id 3): pull meta section up closer under image */
+/* Encore project (id 3): lower the meta section */
 .project-detail-content:has(.project-glow-3) .detail-meta {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
 }
 
 /* Gradepad project (id 5): lower the meta section */
