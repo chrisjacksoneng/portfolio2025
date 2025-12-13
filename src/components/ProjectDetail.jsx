@@ -123,21 +123,29 @@ const ProjectDetail = ({ project, onBack }) => {
             <p>I came back to QQuote for a second term after really enjoying my first co-op there. This time, I wanted to focus on the software development side of things. Having done product management work in my first term, I was excited to get more hands-on with the code and apply what I'd learned about user needs to the technical implementation.</p>
 
             <div className="role-subsection">
-              <h5>API Development</h5>
-              <p>One of my main projects was working on a new <strong>API</strong> that would help both dealerships and our internal team automate their processes. I started by creating detailed specs for the API that defined the endpoints, request/response formats, authentication requirements, and error handling.</p>
-              <p>This was great practice thinking about <strong>API design</strong> from a developer's perspective. I had to consider things like: What data do dealerships actually need? How should we structure the responses to be useful but not overwhelming? What edge cases do we need to handle? Having the product management experience from my first term helped me think through these questions with the end user in mind.</p>
+              <h5>Email Pipeline Optimization</h5>
+              <p>The email system had a critical issue: cron jobs would only start generating emails at the scheduled send time, meaning emails that were supposed to go out at 10 AM wouldn't finish until 4 PM. Dealerships were receiving their reports hours late, which was unacceptable for time-sensitive business data.</p>
+              <p>I helped solve this by separating the preparation and sending phases. I helped implement a dedicated <strong>cron job trigger</strong> that would preload all required email data well before the scheduled send time. When the target time arrived, the system would simply send the preloaded emails rather than building them on the spot.</p>
+              <p>This architectural change, combined with further optimizations to the generation process itself, resulted in <strong>57.8% faster</strong> end-to-end processing times. Email generation was reduced from 3 hours 50 minutes to 1 hour 37 minutes. More importantly, emails now send in under 1 minute once generated, ensuring dealerships receive their reports on time.</p>
             </div>
 
             <div className="role-subsection">
-              <h5>QA Automation</h5>
-              <p>I also worked on automating our QA process using <strong>Cypress.io</strong>. Manual testing was taking up a lot of time, and we needed a way to catch regressions quickly as we added new features. I built out <strong>automated test suites</strong> that would run on key user flows and critical paths.</p>
-              <p>Learning Cypress was interesting because it's a powerful tool that lets you write tests that actually interact with the browser like a real user would. I had to think about what scenarios were most important to test and how to structure the tests so they'd be maintainable as the product evolved.</p>
+              <h5>Database Optimization</h5>
+              <p>Two critical graphs in the Reporter platform were taking up to 80 seconds to load: the <strong>week-over-week quoting graph</strong> and the <strong>potential cumulative revenue graph</strong>. These graphs were querying massive tables and processing huge amounts of unnecessary data, making the email previews nearly unusable.</p>
+              <p>I helped re-architect the database schema by creating dedicated, optimized tables containing only the required parameters for each graph. For the week-over-week quoting graph, I helped create a dedicated table with only the essential data fields needed for that visualization. For the potential cumulative revenue graph, I helped create another optimized table with date fields and specific revenue breakdowns by category.</p>
+              <p>I also helped optimize the <strong>SQL</strong> queries and <strong>PHP</strong> code that interacted with these tables. The results were dramatic: the week-over-week quoting graph improved by an average of <strong>96.33%</strong> (from 42.78s to 1.11s for the most time-intensive cases), and the potential cumulative revenue graph improved by an average of <strong>98.73%</strong> (from 79.73s to 0.74s). These optimizations transformed the email preview experience from frustratingly slow to near-instantaneous.</p>
+            </div>
+
+            <div className="role-subsection">
+              <h5>API Development</h5>
+              <p>I helped lead the design of <strong>custom API contracts</strong> for a client-facing system, defining endpoints and validation rules to enable seamless integration with internal services. This work involved creating detailed specifications that defined the endpoints, request/response formats, authentication requirements, and error handling.</p>
+              <p>This was great practice thinking about <strong>API design</strong> from a developer's perspective. I had to consider things like: What data do clients actually need? How should we structure the responses to be useful but not overwhelming? What edge cases do we need to handle? Having the product management experience from my first term helped me think through these questions with the end user in mind.</p>
             </div>
 
             <div className="role-subsection">
               <h5>The Experience</h5>
               <p>Coming back to QQuote for a second term was really rewarding. I already knew the team and the product, which meant I could jump into more complex projects right away. The combination of product management experience from my first term and technical work from this term gave me a much more complete picture of how software gets built.</p>
-              <p>Working on API development taught me a lot about <strong>system design</strong> and thinking about how different parts of a system communicate with each other. And the QA automation work showed me the importance of having good test coverage and catching bugs early in the development cycle.</p>
+              <p>Working on API development taught me a lot about <strong>system design</strong> and thinking about how different parts of a system communicate with each other. The database optimization work gave me deep experience with performance tuning and understanding how data structures impact application speed. And optimizing the email pipeline showed me how to identify bottlenecks and improve system efficiency at scale.</p>
             </div>
           </div>
         )}
