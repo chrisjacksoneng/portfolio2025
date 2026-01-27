@@ -55,7 +55,7 @@ const Header = () => {
               </svg>
             </a>
           </div>
-          <p className="availability">Searching for Summer 2025 internships!</p>
+          <p className="availability">Searching for Summer 2026 internships!</p>
         </div>
       </div>
     </nav>
